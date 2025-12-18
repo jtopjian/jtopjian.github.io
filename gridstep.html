@@ -1,49 +1,81 @@
+<!-- gridstep.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>GridStep Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Support and quick start for GridStep.">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>GridStep support</span>
+        </div>
+      </div>
+    </header>
 
-<h1>GridStep Support</h1>
+    <section class="hero">
+      <h1>GridStep</h1>
+      <p>
+        GridStep is an AUv3 MIDI step sequencer for iOS. Use it inside an Audio Unit host such as AUM, Drambo, Logic Pro, or GarageBand.
+      </p>
+    </section>
 
-<p>
-GridStep is an AUv3 MIDI step sequencer for iOS.
-</p>
+    <section class="grid">
+      <article class="card span6">
+        <h2>Quick start</h2>
+        <p>Basic setup in a host:</p>
+        <ol class="list">
+          <li>Open your Audio Unit host.</li>
+          <li>Add GridStep as an AUv3 MIDI effect.</li>
+          <li>Add a synth on another track.</li>
+          <li>Route MIDI from GridStep to the synth.</li>
+          <li>Press play in the host.</li>
+        </ol>
+        <div class="hr"></div>
+        <div class="notice">
+          <strong>Tip:</strong> If you do not hear notes, check MIDI routing first. Most issues are host routing, not the plugin.
+        </div>
+      </article>
 
-<h2>Using GridStep</h2>
-<p>
-GridStep is designed to be used as an Audio Unit plugin inside a compatible host
-such as AUM, Drambo, Logic Pro, or GarageBand.
-</p>
+      <article class="card span6">
+        <h2>Support</h2>
+        <p>For bug reports, include: device model, iOS version, host name and version, and exact steps to reproduce.</p>
+        <div class="kv">
+          <div>Email</div>
+          <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
+          <div>Recommended info</div>
+          <div><strong>Host, routing, preset, steps</strong></div>
+          <div>Privacy</div>
+          <div><strong><a href="privacy.html">Privacy policy</a></strong></div>
+        </div>
+      </article>
 
-<h2>Quick start</h2>
-<p>
-1. Open your Audio Unit host.<br>
-2. Add GridStep as an AUv3 MIDI effect.<br>
-3. Add a synth on another track.<br>
-4. Route MIDI from GridStep to the synth.<br>
-5. Press play in the host.
-</p>
+      <article class="card">
+        <h2>Common questions</h2>
+        <p class="small">Preset behavior varies by host. Some hosts do not share preset state across other hosts.</p>
+        <ul class="list">
+          <li>My preset does not load in another host: this is usually a host limitation, not GridStep.</li>
+          <li>No sound: GridStep outputs MIDI. You need a synth and correct routing.</li>
+          <li>Timing issues: confirm the host transport is running and the plugin is synced to host clock.</li>
+        </ul>
+      </article>
+    </section>
 
-<h2>Support</h2>
-<p>
-For help, bug reports, or questions:<br>
-<a href="mailto:joe@terrarum.net">joe@terrarum.net</a>
-</p>
-
-<h2>Privacy</h2>
-<p>
-GridStep does not collect, store, or transmit personal data.
-No analytics, tracking, or third party services are used.
-</p>
-
-<p style="margin-top:32px">
-<a href="index.html">Back to Terrarum</a>
-</p>
-
+    <footer class="footer">
+      <div>© Terrarum</div>
+      <div>
+        <a href="index.html">Home</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
