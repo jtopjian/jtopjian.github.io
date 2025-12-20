@@ -1,11 +1,11 @@
-<!-- gridstep.html -->
+<!-- lattice.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>GridStep Support</title>
+  <title>Lattice Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support and quick start for GridStep.">
+  <meta name="description" content="Support and quick start for Lattice.">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,49 +15,47 @@
         <div class="mark" aria-hidden="true"></div>
         <div class="brand-title">
           <strong>Terrarum</strong>
-          <span>GridStep support</span>
+          <span>Lattice support</span>
         </div>
       </div>
       <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a class="active" href="gridstep.html">GridStep</a>
-        <a href="lattice.html">Lattice</a>
+        <a href="gridstep.html">GridStep</a>
+        <a class="active" href="lattice.html">Lattice</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </header>
 
     <section class="hero">
-      <h1>GridStep</h1>
+      <h1>Lattice</h1>
       <p>
-        GridStep is an AUv3 MIDI step sequencer for iOS. Use it inside an Audio Unit host such as AUM, Drambo, Logic Pro, or GarageBand.
+        Lattice is an AUv3 MIDI instrument for iOS. Use it inside an Audio Unit host and route its MIDI output to a synth.
       </p>
     </section>
 
     <section class="grid">
       <article class="card span6">
         <h2>Quick start</h2>
-        <p>Basic setup in a host:</p>
         <ol class="list">
           <li>Open your Audio Unit host.</li>
-          <li>Add GridStep as an AUv3 MIDI effect.</li>
-          <li>Add a synth on another track.</li>
-          <li>Route MIDI from GridStep to the synth.</li>
+          <li>Add Lattice as an AUv3 MIDI instrument or MIDI effect, depending on the host.</li>
+          <li>Add a synth and route MIDI from Lattice to the synth.</li>
           <li>Press play in the host.</li>
         </ol>
         <div class="hr"></div>
         <div class="notice">
-          <strong>Tip:</strong> If you do not hear notes, check MIDI routing first. Most issues are host routing, not the plugin.
+          <strong>Note:</strong> Lattice is MIDI only. It will not produce audio unless routed to a synth.
         </div>
       </article>
 
       <article class="card span6">
         <h2>Support</h2>
-        <p>For bug reports, include: device model, iOS version, host name and version, and exact steps to reproduce.</p>
+        <p>For help and bug reports:</p>
         <div class="kv">
           <div>Email</div>
           <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
-          <div>Recommended info</div>
-          <div><strong>Host, routing, preset, steps</strong></div>
+          <div>Include</div>
+          <div><strong>Host, routing, settings, steps</strong></div>
           <div>Privacy</div>
           <div><strong><a href="privacy.html">Privacy policy</a></strong></div>
         </div>
@@ -65,11 +63,10 @@
 
       <article class="card">
         <h2>Common questions</h2>
-        <p class="small">Preset behavior varies by host. Some hosts do not share preset state across other hosts.</p>
         <ul class="list">
-          <li>My preset does not load in another host: this is usually a host limitation, not GridStep.</li>
-          <li>No sound: GridStep outputs MIDI. You need a synth and correct routing.</li>
-          <li>Timing issues: confirm the host transport is running and the plugin is synced to host clock.</li>
+          <li>No sound: confirm Lattice is routed to a synth track.</li>
+          <li>Pattern changes unexpectedly: check Random controls and any host automation.</li>
+          <li>Saved state differs between hosts: preset persistence can be host specific.</li>
         </ul>
       </article>
     </section>
