@@ -1,0 +1,114 @@
+<!-- console.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Console Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and quick start for Console.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>Console support</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="gridstep.html">GridStep</a>
+        <a href="lattice.html">Lattice</a>
+        <a class="active" href="console.html">Console</a>
+        <a href="room.html">Room</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Console</h1>
+      <p>
+        Console is an AUv3 audio effect for iOS that adds console-style saturation and distortion. Use it on synth or drum bus tracks to add warmth, punch, and cohesive analog character.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card span6">
+        <h2>Quick start</h2>
+        <ol class="list">
+          <li>Open your Audio Unit host.</li>
+          <li>Add Console as an AUv3 audio effect to your track.</li>
+          <li>Choose a mode: Synth Bus for pads and leads, Drum Bus for drums and bass.</li>
+          <li>Adjust DRIVE to add saturation, use MIX to blend with dry signal.</li>
+        </ol>
+        <div class="hr"></div>
+        <div class="notice">
+          <strong>Note:</strong> Console processes audio. Insert it directly on an audio or instrument track.
+        </div>
+      </article>
+
+      <article class="card span6">
+        <h2>Knob guide</h2>
+        <div class="kv">
+          <div>MODE</div>
+          <div>Drum Bus for drums/bass, Synth Bus for pads/leads</div>
+          <div>DRIVE</div>
+          <div>Input gain and distortion intensity</div>
+          <div>CHARACTER</div>
+          <div>Softer (low) to firmer (high) saturation tone</div>
+          <div>MIX</div>
+          <div>Wet/dry blend for parallel processing</div>
+          <div>OUTPUT</div>
+          <div>Final volume trim for level matching</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Common questions</h2>
+        <ul class="list">
+          <li><strong>Too much distortion:</strong> Lower MIX before lowering DRIVE to preserve the tone.</li>
+          <li><strong>Muddy low end:</strong> Enable HPF and adjust TIGHT to tighten the bass.</li>
+          <li><strong>Harsh highs:</strong> Lower BITE or reduce CHARACTER.</li>
+          <li><strong>High CPU usage:</strong> Set OS to Off or Eco for lighter processing.</li>
+          <li><strong>Latency:</strong> OS Std adds ~12 samples, HQ adds ~14. Use Eco or Off for minimum latency.</li>
+        </ul>
+      </article>
+
+      <article class="card span6">
+        <h2>Support</h2>
+        <p>For help and bug reports:</p>
+        <div class="kv">
+          <div>Email</div>
+          <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
+          <div>Include</div>
+          <div><strong>Host, settings, preset, steps</strong></div>
+          <div>Privacy</div>
+          <div><strong><a href="privacy.html">Privacy policy</a></strong></div>
+        </div>
+      </article>
+
+      <article class="card span6">
+        <h2>Third-party software</h2>
+        <p class="small">
+          Console incorporates the MackEQ algorithm from <a href="https://www.airwindows.com/">Airwindows</a> by Chris Johnson, released under the MIT License.
+        </p>
+        <p class="small">
+          MackEQ provides the console-style 3-band EQ with distinctive saturation that forms the core of Console's character.
+        </p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© Joe Topjian</div>
+      <div>
+        <a href="index.html">Home</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

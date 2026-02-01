@@ -1,0 +1,116 @@
+<!-- room.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Room Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and quick start for Room.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>Room support</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="gridstep.html">GridStep</a>
+        <a href="lattice.html">Lattice</a>
+        <a href="console.html">Console</a>
+        <a class="active" href="room.html">Room</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Room</h1>
+      <p>
+        Room is an AUv3 audio effect for iOS that adds driven room reverb, designed for techno and industrial music.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card span6">
+        <h2>Quick start</h2>
+        <ol class="list">
+          <li>Open your Audio Unit host.</li>
+          <li>Add Room as an AUv3 audio effect to your track.</li>
+          <li>Adjust MODE for your desired room character.</li>
+          <li>Use TIME for decay length and BLEND for wet/dry mix.</li>
+        </ol>
+        <div class="hr"></div>
+        <div class="notice">
+          <strong>Note:</strong> Room processes audio. Insert it directly on an audio or instrument track.
+        </div>
+      </article>
+
+      <article class="card span6">
+        <h2>Knob guide</h2>
+        <div class="kv">
+          <div>MODE</div>
+          <div>Selects tight-room, balanced chamber, or sub-rumble flavors</div>
+          <div>TIME</div>
+          <div>Controls decay and sustain length</div>
+          <div>SMEAR</div>
+          <div>Diffusion energy: low = clear, high = evolving fog</div>
+          <div>DRIVE</div>
+          <div>Saturation on reverb tail only</div>
+          <div>BLEND</div>
+          <div>Wet/dry mix for parallel processing</div>
+          <div>DUCK</div>
+          <div>Envelope follower attenuates reverb on loud input</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Common questions</h2>
+        <ul class="list">
+          <li><strong>Too muddy:</strong> Lower LOW END, raise FILTER, or reduce SMEAR.</li>
+          <li><strong>Losing transients:</strong> Increase DUCK to pump the reverb down when input is loud.</li>
+          <li><strong>Tail too short:</strong> Raise TIME for longer decay.</li>
+          <li><strong>Not enough grit:</strong> Increase DRIVE to saturate the reverb tail.</li>
+          <li><strong>Sub-bass reinforcement:</strong> Set MODE toward rumble, raise LOW END above 0.3.</li>
+        </ul>
+      </article>
+
+      <article class="card span6">
+        <h2>Support</h2>
+        <p>For help and bug reports:</p>
+        <div class="kv">
+          <div>Email</div>
+          <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
+          <div>Include</div>
+          <div><strong>Host, settings, preset, steps</strong></div>
+          <div>Privacy</div>
+          <div><strong><a href="privacy.html">Privacy policy</a></strong></div>
+        </div>
+      </article>
+
+      <article class="card span6">
+        <h2>Third-party software</h2>
+        <p class="small">
+          Room incorporates DSP algorithms from <a href="https://www.airwindows.com/">Airwindows</a> by Chris Johnson, released under the MIT License.
+        </p>
+        <p class="small">
+          Algorithms used: ClearCoat, SubTight, MatrixVerb, and MackEQ.
+        </p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© Joe Topjian</div>
+      <div>
+        <a href="index.html">Home</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
