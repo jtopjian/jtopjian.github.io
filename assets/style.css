@@ -149,10 +149,17 @@ a:hover { text-decoration: underline; }
 }
 
 .hero h1 {
-  margin: 14px 0 9px;
+  margin: 0;
   font-size: clamp(28px, 5vw, 44px);
   line-height: 1.12;
   letter-spacing: -0.02em;
+}
+
+.hero-title {
+  margin: 12px 0 9px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .hero p {
@@ -381,6 +388,39 @@ a:hover { text-decoration: underline; }
   gap: 10px;
 }
 
+.app-head {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-head .app-title {
+  margin-top: 0;
+  width: 100%;
+}
+
+.appicon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  object-fit: cover;
+}
+
+.hero-appicon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  object-fit: cover;
+  margin: 0;
+}
+
 .app-title h2 {
   margin: 0;
   font-size: 21px;
@@ -472,6 +512,17 @@ a:hover { text-decoration: underline; }
 
   .hero p {
     font-size: 15px;
+  }
+
+  .hero-title {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .hero-appicon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
   }
 
   .kv {
