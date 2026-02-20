@@ -1,0 +1,119 @@
+<!-- verb.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Verb Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and quick start for Verb.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>Verb support</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="gridstep.html">GridStep</a>
+        <a href="lattice.html">Lattice</a>
+        <a href="console.html">Console</a>
+        <a href="room.html">Room</a>
+        <a class="active" href="verb.html">Verb</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Verb</h1>
+      <p>
+        Verb is an AUv3 audio effect for iOS with three driven algorithmic reverb engines for techno and industrial production.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card span6">
+        <h2>Quick start</h2>
+        <ol class="list">
+          <li>Open your Audio Unit host.</li>
+          <li>Add Verb as an AUv3 audio effect to your track or bus.</li>
+          <li>Choose an engine: CONCRETE, GATE PIT, or BLOOM RUST.</li>
+          <li>Set ROOM and DECAY, then blend with MIX and OUTPUT.</li>
+        </ol>
+        <div class="hr"></div>
+        <div class="notice">
+          <strong>Note:</strong> Verb processes audio. Insert it directly on an audio or instrument track.
+        </div>
+      </article>
+
+      <article class="card span6">
+        <h2>Knob guide</h2>
+        <div class="kv">
+          <div>ENGINE</div>
+          <div>Concrete = tight/dark, Gate Pit = gated punch, Bloom Rust = reverse swells</div>
+          <div>ROOM</div>
+          <div>Morphs from smaller rooms to wider spaces inside the selected engine</div>
+          <div>DECAY</div>
+          <div>Controls reverb tail length</div>
+          <div>TONE</div>
+          <div>Dark (low) to bright (high) wet-path tone shaping</div>
+          <div>DRIVE / GRIT</div>
+          <div>Saturation and lo-fi degradation on the reverb character</div>
+          <div>CLAMP / STAGGER</div>
+          <div>Tempo-aware tail gating and rhythmic re-clamp pulses</div>
+          <div>MIX / OUTPUT</div>
+          <div>Wet/dry blend and final output trim</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Common questions</h2>
+        <ul class="list">
+          <li><strong>Too muddy:</strong> Lower ROOM, cut PRE LOW, and trim POST LOW.</li>
+          <li><strong>Too harsh:</strong> Lower TONE and POST HIGH, then reduce DRIVE if needed.</li>
+          <li><strong>Clamp feels inactive:</strong> CLAMP follows host tempo when available; increase CLAMP and STAGGER for stronger rhythmic action.</li>
+          <li><strong>No audible effect:</strong> Raise MIX above dry, confirm DECAY is not minimal, and check OUTPUT.</li>
+          <li><strong>High CPU usage:</strong> Verb is moderate CPU; reduce stacked effects in the signal chain if needed.</li>
+        </ul>
+      </article>
+
+      <article class="card span6">
+        <h2>Support</h2>
+        <p>For help and bug reports:</p>
+        <div class="kv">
+          <div>Email</div>
+          <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
+          <div>Include</div>
+          <div><strong>Host, settings, preset, steps</strong></div>
+          <div>Privacy</div>
+          <div><strong><a href="privacy.html">Privacy policy</a></strong></div>
+        </div>
+      </article>
+
+      <article class="card span6">
+        <h2>Third-party software</h2>
+        <p class="small">
+          Verb incorporates DSP algorithms from <a href="https://www.airwindows.com/">Airwindows</a> by Chris Johnson, released under the MIT License.
+        </p>
+        <p class="small">
+          Algorithms used: MV2 and ADClip8.
+        </p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© Joe Topjian</div>
+      <div>
+        <a href="index.html">Home</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
