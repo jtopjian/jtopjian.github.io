@@ -3,9 +3,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>GridStep Support</title>
+  <title>GridStep | Terrarum</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support and quick start for GridStep.">
+  <meta name="description" content="GridStep AUv3 MIDI sequencer support and quick start.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f8fbfd">
+  <link rel="canonical" href="https://jtopjian.github.io/gridstep.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GridStep | Terrarum">
+  <meta property="og:description" content="GridStep AUv3 MIDI sequencer support and quick start.">
+  <meta property="og:url" content="https://jtopjian.github.io/gridstep.html">
+  <meta property="og:site_name" content="Terrarum">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GridStep | Terrarum">
+  <meta name="twitter:description" content="GridStep AUv3 MIDI sequencer support and quick start.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,64 +29,64 @@
         <div class="mark" aria-hidden="true"></div>
         <div class="brand-title">
           <strong>Terrarum</strong>
-          <span>GridStep support</span>
+          <span>GridStep</span>
         </div>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a class="active" href="gridstep.html">GridStep</a>
-        <a href="lattice.html">Lattice</a>
-        <a href="console.html">Console</a>
-        <a href="room.html">Room</a>
-        <a href="verb.html">Verb</a>
+        <a href="index.html">Apps</a>
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero reveal">
+      <div class="eyebrow">MIDI Sequencer</div>
       <h1>GridStep</h1>
       <p>
-        GridStep is an AUv3 MIDI step sequencer for iOS. Use it inside an Audio Unit host such as AUM, Drambo, Logic Pro, or GarageBand.
+        AUv3 MIDI step sequencer for iOS with deterministic playback and host-synced routing.
       </p>
+      <div class="hero-actions">
+        <a class="button primary" href="support.html">Get Support</a>
+        <a class="button" href="index.html">Back to Apps</a>
+      </div>
     </section>
 
     <section class="grid">
-      <article class="card span6">
-        <h2>Quick start</h2>
-        <p>Basic setup in a host:</p>
+      <article class="card span6 reveal">
+        <h2>Quick Start</h2>
         <ol class="list">
           <li>Open your Audio Unit host.</li>
           <li>Add GridStep as an AUv3 MIDI effect.</li>
           <li>Add a synth on another track.</li>
           <li>Route MIDI from GridStep to the synth.</li>
-          <li>Press play in the host.</li>
+          <li>Press play in the host transport.</li>
         </ol>
         <div class="hr"></div>
         <div class="notice">
-          <strong>Tip:</strong> If you do not hear notes, check MIDI routing first. Most issues are host routing, not the plugin.
+          <strong>Tip:</strong> If there is no sound, verify MIDI routing first.
         </div>
       </article>
 
-      <article class="card span6">
-        <h2>Support</h2>
-        <p>For bug reports, include: device model, iOS version, host name and version, and exact steps to reproduce.</p>
+      <article class="card span6 reveal">
+        <h2>Usage Notes</h2>
         <div class="kv">
-          <div>Email</div>
-          <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
-          <div>Recommended info</div>
-          <div><strong>Host, routing, preset, steps</strong></div>
-          <div>Privacy</div>
-          <div><strong><a href="privacy.html">Privacy policy</a></strong></div>
+          <div>Plugin type</div>
+          <div><strong>MIDI only</strong> (no audio output)</div>
+          <div>Best hosts</div>
+          <div><strong>AUM, Drambo, Logic Pro, GarageBand</strong></div>
+          <div>Clock</div>
+          <div><strong>Follow host transport and tempo</strong></div>
+          <div>Preset behavior</div>
+          <div><strong>Can vary by host implementation</strong></div>
         </div>
       </article>
 
-      <article class="card">
-        <h2>Common questions</h2>
-        <p class="small">Preset behavior varies by host. Some hosts do not share preset state across other hosts.</p>
+      <article class="card reveal">
+        <h2>Common Questions</h2>
         <ul class="list">
-          <li>My preset does not load in another host: this is usually a host limitation, not GridStep.</li>
-          <li>No sound: GridStep outputs MIDI. You need a synth and correct routing.</li>
-          <li>Timing issues: confirm the host transport is running and the plugin is synced to host clock.</li>
+          <li><strong>No sound:</strong> GridStep outputs MIDI only. Route it to a synth.</li>
+          <li><strong>Timing feels off:</strong> Confirm host transport is running and synced.</li>
+          <li><strong>Preset differs in another host:</strong> Preset persistence is host-specific in some workflows.</li>
         </ul>
       </article>
     </section>
@@ -80,7 +94,9 @@
     <footer class="footer">
       <div>© Joe Topjian</div>
       <div>
-        <a href="index.html">Home</a>
+        <a href="index.html">Apps</a>
+        <span style="padding:0 8px">·</span>
+        <a href="support.html">Support</a>
         <span style="padding:0 8px">·</span>
         <a href="privacy.html">Privacy</a>
       </div>

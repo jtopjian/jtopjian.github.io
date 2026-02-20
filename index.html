@@ -3,9 +3,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Terrarum</title>
+  <title>Terrarum Apps</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support hub for Terrarum music tools on iOS.">
+  <meta name="description" content="Terrarum app directory for AUv3 music tools on iOS.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f8fbfd">
+  <link rel="canonical" href="https://jtopjian.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Terrarum Apps">
+  <meta property="og:description" content="Terrarum app directory for AUv3 music tools on iOS.">
+  <meta property="og:url" content="https://jtopjian.github.io/">
+  <meta property="og:site_name" content="Terrarum">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Terrarum Apps">
+  <meta name="twitter:description" content="Terrarum app directory for AUv3 music tools on iOS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,83 +29,120 @@
         <div class="mark" aria-hidden="true"></div>
         <div class="brand-title">
           <strong>Terrarum</strong>
-          <span>Joe's personal site for projects and writing</span>
+          <span>iOS audio tools by Joe Topjian</span>
         </div>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a class="active" href="index.html">Home</a>
-        <a href="gridstep.html">GridStep</a>
-        <a href="lattice.html">Lattice</a>
-        <a href="console.html">Console</a>
-        <a href="room.html">Room</a>
-        <a href="verb.html">Verb</a>
+        <a class="active" aria-current="page" href="index.html">Apps</a>
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </header>
 
+    <section class="controls reveal" id="apps" aria-label="App filters">
+      <label for="app-search" class="small">Search apps</label>
+      <input id="app-search" class="input" type="search" placeholder="Type an app name, category, or feature" data-search>
+      <div class="chips" role="group" aria-label="App categories">
+        <button class="chip active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="audio effect" aria-pressed="false">Audio Effect</button>
+        <button class="chip" type="button" data-filter="midi instrument" aria-pressed="false">MIDI Instrument</button>
+        <button class="chip" type="button" data-filter="midi sequencer" aria-pressed="false">MIDI Sequencer</button>
+      </div>
+      <div class="directory-meta" data-results-count aria-live="polite">5 apps shown</div>
+    </section>
+
     <section class="grid" aria-label="Apps">
-      <article class="card span6">
-        <div class="badge"><span class="dot" aria-hidden="true"></span> AUv3 MIDI sequencer</div>
-        <h2 style="margin-top:10px"><a href="gridstep.html">GridStep</a></h2>
-        <p>Step sequencer with deterministic playback and host controlled MIDI routing.</p>
+      <article class="card span6 reveal" data-app data-type="midi sequencer" data-terms="gridstep midi sequencer deterministic routing pattern">
+        <div class="badge"><span class="dot" aria-hidden="true"></span> MIDI Sequencer</div>
+        <div class="app-title">
+          <h2><a href="gridstep.html">GridStep</a></h2>
+          <span class="mono">MIDI</span>
+        </div>
+        <p>Step sequencer with deterministic playback and host-controlled MIDI routing.</p>
+        <div class="pill-row">
+          <span class="pill">AUv3</span>
+          <span class="pill">Host-synced</span>
+          <span class="pill">MIDI only</span>
+        </div>
         <div class="cta-row">
-          <a class="button primary" href="gridstep.html">Support and quick start</a>
-          <a class="button" href="privacy.html">Privacy policy</a>
+          <a class="button primary" href="gridstep.html">Open App Page</a>
         </div>
       </article>
 
-      <article class="card span6">
-        <div class="badge"><span class="dot" aria-hidden="true"></span> AUv3 MIDI instrument</div>
-        <h2 style="margin-top:10px"><a href="lattice.html">Lattice</a></h2>
-        <p>Grid traversal based pattern generation and performance controls.</p>
+      <article class="card span6 reveal" data-app data-type="midi instrument" data-terms="lattice midi instrument grid traversal pattern generation routing">
+        <div class="badge"><span class="dot" aria-hidden="true"></span> MIDI Instrument</div>
+        <div class="app-title">
+          <h2><a href="lattice.html">Lattice</a></h2>
+          <span class="mono">MIDI</span>
+        </div>
+        <p>Grid traversal pattern generator with playable controls for melodic motion.</p>
+        <div class="pill-row">
+          <span class="pill">AUv3</span>
+          <span class="pill">MIDI only</span>
+          <span class="pill">Performance</span>
+        </div>
         <div class="cta-row">
-          <a class="button primary" href="lattice.html">Support and quick start</a>
-          <a class="button" href="privacy.html">Privacy policy</a>
+          <a class="button primary" href="lattice.html">Open App Page</a>
         </div>
       </article>
 
-      <article class="card span6">
-        <div class="badge"><span class="dot" aria-hidden="true"></span> AUv3 audio effect</div>
-        <h2 style="margin-top:10px"><a href="console.html">Console</a></h2>
-        <p>Console-style saturation and distortion for synth and drum bus processing.</p>
+      <article class="card span6 reveal" data-app data-type="audio effect" data-terms="console saturation distortion drum bus synth bus drive">
+        <div class="badge"><span class="dot" aria-hidden="true"></span> Audio Effect</div>
+        <div class="app-title">
+          <h2><a href="console.html">Console</a></h2>
+          <span class="mono">Rivet 01</span>
+        </div>
+        <p>Console-style saturation and distortion for synth, bass, and drum bus processing.</p>
+        <div class="pill-row">
+          <span class="pill">AUv3</span>
+          <span class="pill">Saturation</span>
+          <span class="pill">Tone shaping</span>
+        </div>
         <div class="cta-row">
-          <a class="button primary" href="console.html">Support and quick start</a>
-          <a class="button" href="privacy.html">Privacy policy</a>
+          <a class="button primary" href="console.html">Open App Page</a>
         </div>
       </article>
 
-      <article class="card span6">
-        <div class="badge"><span class="dot" aria-hidden="true"></span> AUv3 audio effect</div>
-        <h2 style="margin-top:10px"><a href="room.html">Room</a></h2>
-        <p>Driven room reverb with wet-path saturation, ducking, and tone shaping for techno and industrial.</p>
+      <article class="card span6 reveal" data-app data-type="audio effect" data-terms="room reverb ducking smear drive techno industrial">
+        <div class="badge"><span class="dot" aria-hidden="true"></span> Audio Effect</div>
+        <div class="app-title">
+          <h2><a href="room.html">Room</a></h2>
+          <span class="mono">Rivet 02</span>
+        </div>
+        <p>Driven room reverb with ducking, smear, and tone controls for dense mixes.</p>
+        <div class="pill-row">
+          <span class="pill">AUv3</span>
+          <span class="pill">Reverb</span>
+          <span class="pill">Parallel blend</span>
+        </div>
         <div class="cta-row">
-          <a class="button primary" href="room.html">Support and quick start</a>
-          <a class="button" href="privacy.html">Privacy policy</a>
+          <a class="button primary" href="room.html">Open App Page</a>
         </div>
       </article>
 
-      <article class="card span6">
-        <div class="badge"><span class="dot" aria-hidden="true"></span> AUv3 audio effect</div>
-        <h2 style="margin-top:10px"><a href="verb.html">Verb</a></h2>
-        <p>Three-engine algorithmic reverb with drive, grit, and clamp controls for dense techno and industrial mixes.</p>
+      <article class="card span6 reveal" data-app data-type="audio effect" data-terms="verb reverb gate pit bloom rust concrete drive grit clamp">
+        <div class="badge"><span class="dot" aria-hidden="true"></span> Audio Effect</div>
+        <div class="app-title">
+          <h2><a href="verb.html">Verb</a></h2>
+          <span class="mono">Rivet 03</span>
+        </div>
+        <p>Three-engine algorithmic reverb with drive, degradation, and rhythmic gating.</p>
+        <div class="pill-row">
+          <span class="pill">AUv3</span>
+          <span class="pill">3 engines</span>
+          <span class="pill">Drive + Grit</span>
+        </div>
         <div class="cta-row">
-          <a class="button primary" href="verb.html">Support and quick start</a>
-          <a class="button" href="privacy.html">Privacy policy</a>
+          <a class="button primary" href="verb.html">Open App Page</a>
         </div>
       </article>
 
-      <article class="card span6">
-        <h2>Contact</h2>
-        <p class="small">
-          Email is the primary support channel.
-        </p>
-        <div class="kv">
-          <div>Support email</div>
-          <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
-          <div>Response time</div>
-          <div><strong>Best effort</strong> (typically within a few days)</div>
-          <div>Privacy</div>
-          <div><strong><a href="privacy.html">Read the policy</a></strong></div>
+      <article class="card card-muted span6 reveal">
+        <h2>Need Help?</h2>
+        <p>Use the support page for setup help, bug reports, and host-specific troubleshooting.</p>
+        <div class="cta-row">
+          <a class="button" href="support.html">Go to Support</a>
+          <a class="button" href="privacy.html">Read Privacy Policy</a>
         </div>
       </article>
     </section>
@@ -99,11 +150,14 @@
     <footer class="footer">
       <div>© Joe Topjian</div>
       <div>
-        <a href="privacy.html">Privacy</a>
+        <a href="index.html">Apps</a>
         <span style="padding:0 8px">·</span>
-        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
       </div>
     </footer>
   </div>
+  <script src="assets/site.js"></script>
 </body>
 </html>

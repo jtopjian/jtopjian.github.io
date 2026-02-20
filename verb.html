@@ -3,9 +3,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Verb Support</title>
+  <title>Verb | Terrarum</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support and quick start for Verb.">
+  <meta name="description" content="Verb AUv3 audio effect support and quick start.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f8fbfd">
+  <link rel="canonical" href="https://jtopjian.github.io/verb.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Verb | Terrarum">
+  <meta property="og:description" content="Verb AUv3 audio effect support and quick start.">
+  <meta property="og:url" content="https://jtopjian.github.io/verb.html">
+  <meta property="og:site_name" content="Terrarum">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Verb | Terrarum">
+  <meta name="twitter:description" content="Verb AUv3 audio effect support and quick start.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,88 +29,73 @@
         <div class="mark" aria-hidden="true"></div>
         <div class="brand-title">
           <strong>Terrarum</strong>
-          <span>Verb support</span>
+          <span>Verb</span>
         </div>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="gridstep.html">GridStep</a>
-        <a href="lattice.html">Lattice</a>
-        <a href="console.html">Console</a>
-        <a href="room.html">Room</a>
-        <a class="active" href="verb.html">Verb</a>
+        <a href="index.html">Apps</a>
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero reveal">
+      <div class="eyebrow">Rivet 03 · Audio Effect</div>
       <h1>Verb</h1>
       <p>
-        Verb is an AUv3 audio effect for iOS with three driven algorithmic reverb engines for techno and industrial production.
+        AUv3 algorithmic reverb with three engines and aggressive character controls for dense mixes.
       </p>
+      <div class="hero-actions">
+        <a class="button primary" href="support.html">Get Support</a>
+        <a class="button" href="index.html">Back to Apps</a>
+      </div>
     </section>
 
     <section class="grid">
-      <article class="card span6">
-        <h2>Quick start</h2>
+      <article class="card span6 reveal">
+        <h2>Quick Start</h2>
         <ol class="list">
           <li>Open your Audio Unit host.</li>
-          <li>Add Verb as an AUv3 audio effect to your track or bus.</li>
-          <li>Choose an engine: CONCRETE, GATE PIT, or BLOOM RUST.</li>
+          <li>Add Verb as an AUv3 effect on a track or bus.</li>
+          <li>Pick ENGINE: Concrete, Gate Pit, or Bloom Rust.</li>
           <li>Set ROOM and DECAY, then blend with MIX and OUTPUT.</li>
         </ol>
         <div class="hr"></div>
         <div class="notice">
-          <strong>Note:</strong> Verb processes audio. Insert it directly on an audio or instrument track.
+          <strong>Note:</strong> Verb processes audio and is designed for inserted track or bus workflows.
         </div>
       </article>
 
-      <article class="card span6">
-        <h2>Knob guide</h2>
+      <article class="card span6 reveal">
+        <h2>Control Summary</h2>
         <div class="kv">
           <div>ENGINE</div>
-          <div>Concrete = tight/dark, Gate Pit = gated punch, Bloom Rust = reverse swells</div>
+          <div>Concrete (tight), Gate Pit (gated), Bloom Rust (reverse swells)</div>
           <div>ROOM</div>
-          <div>Morphs from smaller rooms to wider spaces inside the selected engine</div>
+          <div>Morphs through room variants for each engine</div>
           <div>DECAY</div>
-          <div>Controls reverb tail length</div>
+          <div>Sets tail length from short to long</div>
           <div>TONE</div>
-          <div>Dark (low) to bright (high) wet-path tone shaping</div>
+          <div>Dark to bright wet-path tonal balance</div>
           <div>DRIVE / GRIT</div>
-          <div>Saturation and lo-fi degradation on the reverb character</div>
+          <div>Saturation and degradation for texture</div>
           <div>CLAMP / STAGGER</div>
-          <div>Tempo-aware tail gating and rhythmic re-clamp pulses</div>
-          <div>MIX / OUTPUT</div>
-          <div>Wet/dry blend and final output trim</div>
+          <div>Tempo-linked gating and rhythmic re-clamp pulses</div>
         </div>
       </article>
 
-      <article class="card">
-        <h2>Common questions</h2>
+      <article class="card reveal">
+        <h2>Common Questions</h2>
         <ul class="list">
-          <li><strong>Too muddy:</strong> Lower ROOM, cut PRE LOW, and trim POST LOW.</li>
-          <li><strong>Too harsh:</strong> Lower TONE and POST HIGH, then reduce DRIVE if needed.</li>
-          <li><strong>Clamp feels inactive:</strong> CLAMP follows host tempo when available; increase CLAMP and STAGGER for stronger rhythmic action.</li>
-          <li><strong>No audible effect:</strong> Raise MIX above dry, confirm DECAY is not minimal, and check OUTPUT.</li>
-          <li><strong>High CPU usage:</strong> Verb is moderate CPU; reduce stacked effects in the signal chain if needed.</li>
+          <li><strong>Too muddy:</strong> Lower ROOM and trim PRE/POST low EQ.</li>
+          <li><strong>Too bright:</strong> Lower TONE and trim POST high EQ.</li>
+          <li><strong>Clamp feels weak:</strong> Increase CLAMP, then STAGGER for stronger movement.</li>
+          <li><strong>No clear effect:</strong> Raise MIX, confirm DECAY is above minimum, and check OUTPUT.</li>
         </ul>
       </article>
 
-      <article class="card span6">
-        <h2>Support</h2>
-        <p>For help and bug reports:</p>
-        <div class="kv">
-          <div>Email</div>
-          <div><strong><a href="mailto:joe@terrarum.net">joe@terrarum.net</a></strong></div>
-          <div>Include</div>
-          <div><strong>Host, settings, preset, steps</strong></div>
-          <div>Privacy</div>
-          <div><strong><a href="privacy.html">Privacy policy</a></strong></div>
-        </div>
-      </article>
-
-      <article class="card span6">
-        <h2>Third-party software</h2>
+      <article class="card span6 reveal">
+        <h2>Third-Party Software</h2>
         <p class="small">
           Verb incorporates DSP algorithms from <a href="https://www.airwindows.com/">Airwindows</a> by Chris Johnson, released under the MIT License.
         </p>
@@ -109,7 +108,9 @@
     <footer class="footer">
       <div>© Joe Topjian</div>
       <div>
-        <a href="index.html">Home</a>
+        <a href="index.html">Apps</a>
+        <span style="padding:0 8px">·</span>
+        <a href="support.html">Support</a>
         <span style="padding:0 8px">·</span>
         <a href="privacy.html">Privacy</a>
       </div>
