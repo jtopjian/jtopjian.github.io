@@ -60,7 +60,7 @@
         <ol class="list">
           <li>Open your Audio Unit host.</li>
           <li>Add Verb as an AUv3 effect on a track or bus.</li>
-          <li>Pick ENGINE: Concrete, Gate Pit, or Bloom Rust.</li>
+          <li>Pick ENGINE: Concrete, Pit, or Bloom.</li>
           <li>Set ROOM and DECAY, then blend with MIX and OUTPUT.</li>
         </ol>
         <div class="hr"></div>
@@ -73,7 +73,7 @@
         <h2>Control Summary</h2>
         <div class="kv">
           <div>ENGINE</div>
-          <div>Concrete (tight), Gate Pit (gated), Bloom Rust (reverse swells)</div>
+          <div>Concrete (tight), Pit (gated), Bloom (reverse swells)</div>
           <div>ROOM</div>
           <div>Morphs through room variants for each engine</div>
           <div>DECAY</div>
@@ -84,6 +84,10 @@
           <div>Saturation and degradation for texture</div>
           <div>CLAMP / STAGGER</div>
           <div>Tempo-linked gating and rhythmic re-clamp pulses</div>
+          <div>WIDTH / OVERSAMPLING</div>
+          <div>Stereo image control and quality mode for drive/grit stages</div>
+          <div>PRE-EQ / POST-EQ</div>
+          <div>Three-band tone shaping before and after reverb processing</div>
         </div>
       </article>
 
@@ -93,6 +97,7 @@
           <li><strong>Too muddy:</strong> Lower ROOM and trim PRE/POST low EQ.</li>
           <li><strong>Too bright:</strong> Lower TONE and trim POST high EQ.</li>
           <li><strong>Clamp feels weak:</strong> Increase CLAMP, then STAGGER for stronger movement.</li>
+          <li><strong>Clamp timing odd:</strong> Confirm host tempo/transport; Verb falls back to internal timing when host sync is unavailable.</li>
           <li><strong>No clear effect:</strong> Raise MIX, confirm DECAY is above minimum, and check OUTPUT.</li>
         </ul>
       </article>

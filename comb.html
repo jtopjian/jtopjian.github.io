@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Comb | Terrarum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Comb AUv3 audio effect support and quick start.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f8fbfd">
+  <link rel="canonical" href="https://jtopjian.github.io/comb.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Comb | Terrarum">
+  <meta property="og:description" content="Comb AUv3 audio effect support and quick start.">
+  <meta property="og:url" content="https://jtopjian.github.io/comb.html">
+  <meta property="og:site_name" content="Terrarum">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Comb | Terrarum">
+  <meta name="twitter:description" content="Comb AUv3 audio effect support and quick start.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>Comb</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Apps</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero reveal">
+      <div class="eyebrow">Rivet 04 · Audio Effect</div>
+      <div class="hero-title">
+      <img class="hero-appicon" src="assets/icons/comb.png" alt="Comb app icon">
+      <h1>Comb</h1>
+      </div>
+      <p>
+        AUv3 resonant comb feedback processor for metallic drum tones, room-like resonances, and motion-heavy textures.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="support.html">Get Support</a>
+        <a class="button" href="index.html">Back to Apps</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card span6 reveal">
+        <h2>Quick Start</h2>
+        <ol class="list">
+          <li>Open your Audio Unit host.</li>
+          <li>Add Comb as an AUv3 effect on a track or bus.</li>
+          <li>Set TUNE for pitch, DECAY for tail length, and DAMP for brightness.</li>
+          <li>Add DRIVE and blend with MIX, then level-match with OUT.</li>
+        </ol>
+        <div class="hr"></div>
+        <div class="notice">
+          <strong>Note:</strong> Comb processes audio and is designed for inserted track or bus workflows.
+        </div>
+      </article>
+
+      <article class="card span6 reveal">
+        <h2>Control Summary</h2>
+        <div class="kv">
+          <div>TUNE / DECAY</div>
+          <div>Sets resonator pitch and resonance tail length with stability clamping</div>
+          <div>DAMP / DRIVE</div>
+          <div>Shapes loop brightness and saturation inside the feedback path</div>
+          <div>BAND / BP RANGE</div>
+          <div>Focuses output using a selectable bandpass range</div>
+          <div>LFO DEPTH / LFO SPEED</div>
+          <div>Adds micro-modulation movement from subtle to animated</div>
+          <div>MODE / HOT / STEREO</div>
+          <div>Switch resonator character, increase aggression, and widen channels</div>
+          <div>MIX / OUT / PANIC</div>
+          <div>Blend dry/wet, match loudness, and reset delay/filter state</div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <h2>Common Questions</h2>
+        <ul class="list">
+          <li><strong>No effect:</strong> Raise MIX and DECAY, then confirm audio is routed through Comb.</li>
+          <li><strong>Too harsh:</strong> Lower DRIVE or DAMP, and trim highs with post EQ in your host.</li>
+          <li><strong>Low-end mud:</strong> Raise LOOP HP and reduce pre-EQ low frequencies.</li>
+          <li><strong>Resonance stuck:</strong> Use PANIC to clear delay and filter state, then lower DECAY.</li>
+        </ul>
+      </article>
+
+      <article class="card span6 reveal">
+        <h2>Third-Party Software</h2>
+        <p class="small">
+          Comb incorporates DSP algorithms from <a href="https://www.airwindows.com/">Airwindows</a> by Chris Johnson, released under the MIT License.
+        </p>
+        <p class="small">
+          Algorithms used: NonlinearSpace, ADClip8, and ClipOnly2.
+        </p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© Joe Topjian</div>
+      <div>
+        <a href="index.html">Apps</a>
+        <span style="padding:0 8px">·</span>
+        <a href="support.html">Support</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
