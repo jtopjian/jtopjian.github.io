@@ -1,0 +1,164 @@
+<!-- perc8-manual.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Perc8 Manual | Terrarum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Full Perc8 manual for Pattern, Chain, FX, Master, Presets, and Settings.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f8fbfd">
+  <link rel="canonical" href="https://jtopjian.github.io/perc8-manual.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Perc8 Manual | Terrarum">
+  <meta property="og:description" content="Full Perc8 manual for Pattern, Chain, FX, Master, Presets, and Settings.">
+  <meta property="og:url" content="https://jtopjian.github.io/perc8-manual.html">
+  <meta property="og:site_name" content="Terrarum">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Perc8 Manual | Terrarum">
+  <meta name="twitter:description" content="Full Perc8 manual for Pattern, Chain, FX, Master, Presets, and Settings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>Perc8 Manual</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Apps</a>
+        <a href="perc8.html">Perc8</a>
+        <a class="active" aria-current="page" href="perc8-manual.html">Manual</a>
+        <a href="perc8-tutorials.html">Tutorials</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <section class="hero reveal">
+      <div class="eyebrow">Perc8 manual</div>
+      <div class="hero-title">
+        <img class="hero-appicon" src="assets/icons/perc8.png" alt="Perc8 app icon">
+        <h1>Full manual</h1>
+      </div>
+      <p>
+        This page mirrors the built-in help text and keeps the current Perc8 workflow in one place: Pattern editing, Chain arrangement, FX, Master, Presets, and Settings.
+      </p>
+      <div class="doc-nav">
+        <a class="button" href="#overview">Overview</a>
+        <a class="button" href="#pattern">Pattern</a>
+        <a class="button" href="#chain">Chain</a>
+        <a class="button" href="#fx">FX</a>
+        <a class="button" href="#master">Master</a>
+        <a class="button" href="#settings">Settings</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card span6 doc-section reveal" id="overview">
+        <h2>The four main tabs</h2>
+        <p class="doc-copy">SYNTH is where you do most of your work: sound design, pattern sequencing, FX sends, and mixing.
+PRESETS is for saving and loading voices, kits, and full projects.
+SETTINGS handles transport sync, MIDI routing, and output routing.
+HELP is this manual.</p>
+      </article>
+
+      <article class="card span6 doc-section reveal">
+        <h2>The synth tab</h2>
+        <p class="doc-copy">The title row holds global controls: FILL, PAT / CHN playback mode, and the wrench menu.
+The voice block is the row of eight numbered voice buttons; the selected voice is the one you are editing.
+The tall MUTE button cycles through mute modes.
+The bank / pattern row gives you 8 banks by 8 patterns, or 64 patterns total.
+The scope bar at the bottom switches between PATTERN, CHAIN, FX, and MASTER.</p>
+      </article>
+
+      <article class="card span6 doc-section reveal" id="pattern">
+        <h2>Voice parameters and pattern editing</h2>
+        <p class="doc-copy">Tap ENG, FILT, EQ/DRV, ENV/FX, or LFO to shape the selected voice.
+In PATTERN scope, PLK appears so you can record parameter locks on a step.</p>
+        <div class="hr"></div>
+        <p class="doc-copy"><strong>Engine.</strong> Each voice can use any engine independently. Macros are named per engine and each one controls several synthesis parameters at once.</p>
+        <p class="doc-copy"><strong>Filter.</strong> The post-synthesis filter offers Off, LP, BP, HP, and Notch modes, with SVF, Ladder, Comb, Formant, MS-20, and TB-303 style architectures.</p>
+        <p class="doc-copy"><strong>EQ / Drive.</strong> Low, mid, and high EQ sit at 0.5 for flat response; the drive section adds saturation character and amount.</p>
+        <p class="doc-copy"><strong>Envelope / FX sends.</strong> Attack and decay shape the voice, while FX1, FX2, and FX3 send to DUB, VERB, and MOD.</p>
+        <p class="doc-copy"><strong>LFO.</strong> Two independent LFOs per voice can target macros, filter, amp, drive, pan, EQ, and FX sends.</p>
+        <div class="hr"></div>
+        <p class="doc-copy"><strong>Pattern banks.</strong> Perc8 uses 8 banks with 8 patterns each, for 64 patterns total. While playback is running, a pattern change queues until the next CH.LEN boundary so the transition stays locked to the groove.</p>
+        <p class="doc-copy"><strong>P-lock details.</strong> P-locks can live on trigless steps too. A dot badge marks any step that carries a lock. To clear a lock, select the step and double-tap the locked control back to its base value.</p>
+      </article>
+
+      <article class="card span6 doc-section reveal">
+        <h2>Sequencing</h2>
+        <p class="doc-copy">Pattern scope is where you build drum loops on the 2x8 step grid.
+Tap steps to toggle trigs or select them for detailed editing.
+Long patterns use page navigation above the grid.</p>
+        <div class="hr"></div>
+        <p class="doc-copy"><strong>TRG.</strong> STEP covers trig, note, velocity, length, condition, and timing. RTRG handles retriggers. EUC generates Euclidean rhythms and can replace, add, subtract, XOR, or intersect with existing steps.</p>
+        <p class="doc-copy"><strong>P-locks.</strong> Tap PLK to arm recording, select a step, change a parameter, and the change is stored on that step. Trigless steps are allowed. A dot badge marks steps that carry p-locks.</p>
+        <p class="doc-copy"><strong>Fill.</strong> Fill is a latch toggle in the title row. Steps conditioned for Fill play only when Fill is active, and Not Fill steps stay silent.</p>
+        <p class="doc-copy"><strong>Pattern banks.</strong> Pattern changes queue on the next CH.LEN boundary so playback stays locked.</p>
+        <p class="doc-copy"><strong>Wrench utilities.</strong> Pattern scope has Copy, Paste, Duplicate, and Clear; Chain scope has Loop On, Loop Off, and Clear.</p>
+      </article>
+
+      <article class="card span6 doc-section reveal" id="chain">
+        <h2>Chain</h2>
+        <p class="doc-copy">The Chain is the arranger. Instead of looping one pattern forever, you build a sequence of slots that play one after another.
+Chain has two sub-modes: SLOTS and AUTO.</p>
+        <div class="hr"></div>
+        <p class="doc-copy"><strong>Slots.</strong> Add, reorder, duplicate, or delete slots. Each slot references a pattern. The FILL chip on a slot toggles fill mode for that slot.</p>
+        <p class="doc-copy"><strong>Capacity.</strong> The chain can hold up to 64 slots.</p>
+        <p class="doc-copy"><strong>Loop behavior.</strong> Loop On sends playback back to slot 1 after the last slot. Loop Off plays through once and stops.</p>
+        <p class="doc-copy"><strong>Auto.</strong> Double-tap a slot to open automation. Choose a voice and parameter, then edit the lane step by step. Lane actions include Fill, Flat, Ramp, Sine, Triangle, Square, Pulse, Random, and Clear.</p>
+        <p class="doc-copy"><strong>Value hierarchy.</strong> P-lock overrides Chain automation, which overrides Sound. Dim values are inherited; bright values are overridden at the current scope.</p>
+      </article>
+
+      <article class="card span6 doc-section reveal" id="fx">
+        <h2>FX</h2>
+        <p class="doc-copy">Perc8 has three global effects. Voice send levels are set in ENV/FX on the Pattern scope, while the FX scope controls the effects themselves and shows live activity.</p>
+        <div class="hr"></div>
+        <p class="doc-copy"><strong>DUB.</strong> A dirty stereo delay with TIME, SYNC, FEEDBACK, TONE, DRIVE, WIDTH, and RETURN.</p>
+        <p class="doc-copy"><strong>VERB.</strong> An industrial reverb with SIZE, DECAY, DIFFUSION, PRE-DLY, TONE, GRIT, SYNC, and RETURN.</p>
+        <p class="doc-copy"><strong>MOD.</strong> A chorus / flanger with MODE, RATE, DEPTH, MANUAL, RES, WIDTH, SYNC, and RETURN.</p>
+      </article>
+
+      <article class="card span6 doc-section reveal" id="master">
+        <h2>Master, presets, and playback</h2>
+        <p class="doc-copy"><strong>Master.</strong> The Master scope is a mixer for the eight voices plus a global master strip.
+Each voice strip has trim, pan, mute, solo, choke, and bus routing.
+The master strip controls width, level, EQ, drive, threshold, release, and ceiling.</p>
+        <div class="hr"></div>
+        <p class="doc-copy"><strong>Mute modes.</strong> Off means a voice tap selects it. Pattern turns a voice tap into pattern mute. Global turns a voice tap into global mute.</p>
+        <p class="doc-copy"><strong>Playback.</strong> PAT loops the selected pattern. CHN plays the chain in order. Fill can be latched on and off live.</p>
+        <p class="doc-copy"><strong>Presets.</strong> Voice presets save one voice. Kit presets save all eight voices plus master and FX. Project presets save the full session, including patterns and chain. Preset actions include Save, Load, Rename, Delete, Export, and Import.</p>
+      </article>
+
+      <article class="card span6 doc-section reveal" id="settings">
+        <h2>Settings</h2>
+        <p class="doc-copy"><strong>Transport.</strong> Sync Source chooses where Perc8 receives tempo clock. Sync Mode controls whether Perc8 is clock master or follows an external source. MIDI Source selects the MIDI input device.</p>
+        <div class="hr"></div>
+        <p class="doc-copy"><strong>Sequencer.</strong> M.LEN sets the default pattern length. Voices with P.LEN set to Master inherit that value. CH.LEN controls how long the active pattern plays before a queued or chained pattern begins; AUTO follows M.LEN.</p>
+        <p class="doc-copy"><strong>MIDI routing.</strong> Single Channel uses one MIDI channel for all voices. Multi-Timbral assigns each voice its own channel. Pattern sets the MIDI channel used for pattern-level trigger input.</p>
+        <p class="doc-copy"><strong>Output routing.</strong> Main Output selects the stereo pair for the master mix. Per-Bus Routing can send individual voices to separate outputs when the host supports them.</p>
+        <p class="doc-copy"><strong>End of manual.</strong></p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© Joe Topjian</div>
+      <div>
+        <a href="index.html">Apps</a>
+        <span style="padding:0 8px">·</span>
+        <a href="perc8-tutorials.html">Tutorials</a>
+        <span style="padding:0 8px">·</span>
+        <a href="support.html">Support</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
