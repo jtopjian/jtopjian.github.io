@@ -64,7 +64,7 @@
         <pre class="doc-copy">Tutorial 1: Drum Workout
 
 Goal
-This is the first-time Perc8 tutorial. You will build a simple drum workout in four patterns, then arrange those patterns into a chain.
+This is the first Perc8 tutorial. You will build a simple drum workout across four patterns, then arrange those patterns into a chain.
 
 You will learn:
 • how to choose engines
@@ -76,30 +76,30 @@ You will learn:
 
 Set Up
 Open Perc8 and go to the SYNTH tab.
-
 Stay in PATTERN scope to start.
-
 Set the tempo in the top transport to 128 BPM.
-
 Make sure pattern A is selected.
 
 The Main Areas
-Before you program anything, take one minute to learn the layout.
+Before you program anything, take a minute to learn the layout.
 
 • The voice row is the row of numbered slots at the top. Tap a slot to select a voice.
 • The step grid is where you place trigs.
 • The section tabs are TRG, ENG, FILT, EQ/DRV, ENV/FX, and LFO.
+• Mute and solo are shared across the voice row, master mixer, and ENV card. Tapping one updates the others.
 • In PATTERN scope, PLK appears as an extra button. Use PLK when you want to record a different value on a step.
 • The scope bar at the bottom lets you switch between PATTERN, CHAIN, FX, and MASTER.
 
 Pattern A - The Foundation
+
+Build the core groove first. Once Pattern A feels solid, the later patterns will only add variation and motion.
 
 Voice 1 - Kick
 Tap slot [1].
 Tap ENG.
 Set Engine: Carbon Kick
 
-Set the eight macro knobs exactly like this:
+Set the eight macro knobs like this:
 • BODY  +1 dB
 • PUNCH 12 semi
 • DECAY 40%
@@ -110,13 +110,15 @@ Set the eight macro knobs exactly like this:
 • DYNAMICS 6 dB
 
 Now add the basic kick pattern:
-• long-press step 1
-• long-press step 5
-• long-press step 9
-• long-press step 13
+• double-tap step 1
+• double-tap step 5
+• double-tap step 9
+• double-tap step 13
 
-Tap EQ/DRV.
-In the DRV area set:
+You now have a straight four-on-the-floor kick.
+
+Tap EQ/DRV, then DRIVE.
+Set:
 • Drive Type: Tube
 • Amount: 20%
 
@@ -128,9 +130,10 @@ Set:
 • Res: 10%
 • Env: +20%
 
-Tap ENV/FX.
+Tap ENV/FX, then ENV.
 Set:
 • ENV DECAY 300 ms
+The ENV card&#x27;s MUTE and SOLO buttons stay on until you tap them again.
 
 Voice 2 - Snare
 Tap slot [2].
@@ -151,7 +154,7 @@ Add steps:
 • step 5
 • step 13
 
-Tap EQ/DRV.
+Tap EQ/DRV, then DRIVE.
 Set:
 • Drive Type: Tube
 • Amount: 15%
@@ -181,6 +184,8 @@ Tap TRG.
 Set:
 • LEN 1/32
 
+TRIG LEN uses a fixed 1/16-note grid. 1/32 is always a 32nd note, and it only equals &quot;half a step&quot; when S.LEN is 1/16.
+
 Voice 4 - Clap
 Tap slot [4].
 Tap ENG.
@@ -191,7 +196,7 @@ Set:
 • DECAY 45%
 • FLAM 50%
 • RESONANCE 35%
-• TAIL 60%
+• TAIL 0%
 • ATTACK 30%
 • TUNE 0 semi
 • DIRT 10%
@@ -199,7 +204,7 @@ Set:
 Add steps:
 • 11
 
-Pattern A should now sound like a clean basic workout groove.
+Pattern A should now sound like a clean, basic workout groove.
 
 P-Locks: Add Variation Without Changing Every Step
 
@@ -208,23 +213,25 @@ PLK records a value on the selected step. That changed value stays active until 
 Kick p-lock:
 • Add steps 15 and 16
 • Tap the PLK button.
-• tap step 16 on Voice 1
-• go to ENG
-• change PUNCH from 12 semi to 16 semi
-• change GRIT from 6 dB to 9 dB
+• Tap step 16 on Voice 1
+• Go to ENG
+• Change PUNCH from 12 semi to 16 semi
+• Change GRIT from 6 dB to 9 dB
 
 Snare p-lock:
-• tap step 13 on Voice 2
-• go to TRG
-• set VEL to 127
-• set MTIME to +0.05
+• Tap step 13 on Voice 2
+• Go to TRG
+• Set VEL to 127
+• Set MTIME to +0.05
 
 Hat p-lock:
-• tap step 15 on Voice 3
-• go to TRG
-• set VEL to 90
+• Tap step 15 on Voice 3
+• Go to TRG
+• Set VEL to 90
 
 Tap PLK again to leave record mode.
+
+Those small changes should make the loop feel less static without changing the whole pattern.
 
 Pattern B - Open The Hat Layer
 Duplicate A so you can build on it instead of starting over.
@@ -255,6 +262,8 @@ Set these hat accents:
 • step 15 VEL 65
 Tap PLK again.
 
+Pattern B should feel more active, but still clearly related to A.
+
 Voice 4 - Clap
 Keep the same Carbon Clap settings.
 
@@ -273,7 +282,7 @@ Set:
 • RESON 35%
 • SWEEP 8 semi
 • TUNE 0 semi
-• ATTACK 10 ms
+• NOISE 10%
 
 Add steps:
 • 7
@@ -294,7 +303,7 @@ Voice 2 - Snare
 Leave the snare pattern as it is.
 
 Voice 3 - Hat
-Add the missing steps so the hat now plays on all 16 steps
+Add the missing steps so the hat now plays on all 16 steps:
 • Add step 2
 • Tap PLK
 • Set velocity on step 2 to 50
@@ -311,8 +320,11 @@ Set:
 • Target TONE
 • Rate 0.5 Hz
 • Depth 20%
+• Phase +12
 • Trig OFF
 • 1-Shot OFF
+
+PHASE at 0 is neutral. Small positive or negative values shift where the waveform starts without changing the rate.
 
 This slowly moves the hat brightness and makes the loop feel less static.
 
@@ -322,12 +334,14 @@ Leave the clap pattern as it is.
 Voice 5 - Tom
 Leave the tom pattern as it is.
 
+Pattern C should now feel like the most animated version of the groove so far.
+
 Pattern D - Breakdown
 Open the utility menu and choose Duplicate Pattern one more time.
 
 D should now be selected.
 
-This pattern is the sparse release, so remove material instead of rebuilding.
+This pattern is the sparse release section, so remove material instead of rebuilding.
 
 Voice 1 - Kick
 Leave only:
@@ -351,7 +365,7 @@ Clear the clap steps.
 
 Voice 5 - Tom
 Leave only:
-• 16
+• 7
 
 Voice 6 - Crash
 Tap slot [6].
@@ -375,12 +389,12 @@ In TRG, set
 • VEL 60
 • LEN 1/4
 
-Make A Chain
+Make a Chain
 Now turn the four patterns into a simple arrangement.
 
 Enable CHAIN playback by tapping the PAT/CHN button in the top bar.
 
-Set chain mode to LOOP by tapping the wrench/utility button.
+Open the Chain wrench and set Loop On.
 
 Add seven slots.
 
@@ -395,6 +409,8 @@ Configure them like this:
 
 If you want a pattern to play more than once in the chain, add it again as another slot.
 
+If you want to tweak the arrangement while it runs, stay in Slots for structure and open Chain when you want to scrub the full chain view and edit automation.
+
 Press Play.
 
 You now have a full four-pattern drum workout:
@@ -407,7 +423,8 @@ What To Try Next
 • Raise GRIT on the kick if you want more aggression.
 • Lower HAT DECAY if the groove feels too busy.
 • Add one more PLK on the tom for a small fill in C.
-• In CHAIN, lock a slot if you want to stay on one section while you tweak it.</pre>
+• In CHAIN, lock a slot if you want to stay on one section while you tweak it.
+</pre>
       </article>
 
       <article class="card span6 tutorial-card reveal" id="tutorial-2">
@@ -428,10 +445,14 @@ This tutorial uses:
 • Dual Synth for the acid line
 
 Set Up
-Go to the EDITOR tab.
+Go to the SYNTH tab.
 Set the tempo to 136 BPM.
 
+This tutorial moves faster than Tutorial 1. It assumes you already know how to select voices, place steps, and arm PLK.
+
 Pattern A - Main Groove
+
+Start by building the main groove and the acid line together. The later patterns will mostly add density and contrast.
 
 Voice 1 - Kick
 Tap slot [1].
@@ -454,7 +475,7 @@ Add kick steps:
 • 9
 • 13
 
-Tap EQ/DRV.
+Tap EQ/DRV, then DRIVE.
 Set:
 • Drive Type Dist
 • Amount 25%
@@ -527,7 +548,7 @@ Set:
 • DECAY 45%
 • FLAM 50%
 • RESONANCE 35%
-• TAIL 60%
+• TAIL 50%
 • ATTACK 30%
 • TUNE 0 semi
 • DIRT 10%
@@ -541,13 +562,13 @@ Tap ENG.
 Set Engine: Dual Synth
 
 Set:
-• SHAPE 1 1.0
-• SHAPE 2 0.45
-• WIDTH 1 50%
-• WIDTH 2 50%
+• OSC1 1.0
+• OSC2 0.45
+• PW1 50%
+• PW2 50%
 • MIX 60/40
 • DETUNE 8%
-• TUNE 0 semi
+• OSC2 TUNE 0 semi
 • SUB 20%
 
 Tap FILT.
@@ -558,7 +579,7 @@ Set:
 • Res 70%
 • Env +40%
 
-Tap ENV/FX.
+Tap ENV/FX, then ENV.
 Set:
 • ENV DECAY 200 ms
 
@@ -587,12 +608,14 @@ Add acid accents:
 • step 13 RES 75%
 Tap PLK again.
 
-Pattern B - Open Hats And More Acid
+Pattern A should now feel like a full groove, not just a drum loop.
+
+Pattern B - Open Hats and More Acid
 Open the utility menu and choose Duplicate Pattern.
 
 B should now be selected.
 
-Keep all sound settings the same.
+Keep the sound settings the same.
 
 Voice 1 - Kick
 Add these extra kick steps:
@@ -614,14 +637,14 @@ Set hat VEL:
 • steps 1, 5, 9, 13 to 95
 • steps 3, 7, 11, 15 to 70
 Set hat LEN:
-• steps 3, 7, 11, 15 to 1/18
+• steps 3, 7, 11, 15 to .188
 Tap PLK again.
 
 Voice 4 - Clap
 Leave the clap pattern as it is.
 
 Voice 5 - Dual Synth
-Steps:
+Add these steps:
 • 1
 • 3
 • 4
@@ -649,6 +672,8 @@ Set:
 • step 15 RES 85%
 Tap PLK again.
 
+Pattern B should feel more urgent than A, especially in the hats and acid line.
+
 Pattern C - Peak Pattern
 Open the utility menu and choose Duplicate Pattern again.
 
@@ -665,7 +690,7 @@ Voice 3 - Hat
 Leave the same hat steps in place.
 
 Voice 4 - Clap
-Change the clap to be on steps
+Change the clap so it lands on:
 • 1
 • 5
 • 9
@@ -675,6 +700,8 @@ Change the clap to be on steps
 
 Voice 5 - Dual Synth
 Leave the same dual synth steps in place.
+
+Pattern C should feel like the peak section before the drop.
 
 Pattern D - Breakdown
 Open the utility menu and choose Duplicate Pattern one more time.
@@ -690,7 +717,7 @@ Leave only:
 • 13
 
 Voice 2 - Snare
-For Step 13, in TRG > RTRG:
+For Step 13, in TRG &gt; RTRG:
 • RTRG ON
 • COUNT 4
 
@@ -704,7 +731,7 @@ Voice 4 - Clap
 Clear the clap steps.
 
 Voice 5 - Dual Synth
-Leave the steps as-is
+Leave the steps as they are.
 
 Tap LFO.
 Select L1.
@@ -713,12 +740,13 @@ Set:
 • Target CUTOFF
 • Rate 0.1 Hz
 • Depth 10%
+• Phase -10
 • Trig OFF
 • 1-Shot OFF
 
-Keep the depth low. The main movement should still come from the sequence and PLK accents.
+Keep the depth low. PHASE is neutral at 0, so a small offset is enough if you want the cycle to lean earlier or later against the pattern. The main movement should still come from the sequence and PLK accents.
 
-Build The Chain
+Build the Chain
 Tap CHAIN in the scope bar.
 Set mode to LOOP.
 
@@ -736,6 +764,8 @@ Add ten slots:
 
 If you want a pattern to play more than once in the chain, add it again as another slot.
 
+Use Slots to build the arrangement order. Open Chain afterward if you want to scrub the whole chain and edit automation across the larger timeline.
+
 Press Play.
 
 You now have a classic four-part acid techno arrangement:
@@ -746,12 +776,14 @@ You now have a classic four-part acid techno arrangement:
 
 FX
 
+Now give the pattern some space and movement.
+
 Go back to PATTERN and tap voice 5
-Tap ENV/FX
+Tap ENV/FX, then FX
 • Set FX SEND 1 to 25%
 • Set FX SEND 3 to 35%
 
-For voice 4, tap ENV/FX
+For voice 4, tap ENV/FX, then FX
 • Set FX SEND 3 to 100%
 
 Go to the FX page
@@ -761,7 +793,7 @@ DUB
 • TIME 1/8T
 • FB 60%
 • DRIVE 10%
-• WIDTH 90%
+• WIDTH 60%
 • TONE 38%
 • RETURN 75%
 
@@ -771,13 +803,17 @@ MOD
 
 Go to the MASTER page
 • WIDTH 150%
-• MID -8
-• MIDF 110
+• MONO 250 Hz
+• MID -4
+• MIDF 400
 • TYPE RAT
-• MDRIVE 50%
+• MDRIVE 25%
 • THRESH -7.5
-• REL 149
-• CEIL -11</pre>
+• REL 150
+• CEIL -11
+
+At this point the groove should feel wide, driven, and slightly unstable in the right way.
+</pre>
       </article>
     </section>
 
@@ -786,7 +822,7 @@ Go to the MASTER page
       <div>
         <a href="index.html">Apps</a>
         <span style="padding:0 8px">·</span>
-        <a href="perc8-manual.html">Manual</a>
+        <a href="perc8.html">Perc8</a>
         <span style="padding:0 8px">·</span>
         <a href="support.html">Support</a>
       </div>

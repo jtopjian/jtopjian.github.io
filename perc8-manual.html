@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <title>Perc8 Manual | Terrarum</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Full Perc8 manual for Pattern, Chain, FX, Master, Presets, and Settings.">
+  <meta name="description" content="Perc8 full manual: tabs, voice parameters, sequencing, and effects.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#f8fbfd">
   <link rel="canonical" href="https://jtopjian.github.io/perc8-manual.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Perc8 Manual | Terrarum">
-  <meta property="og:description" content="Full Perc8 manual for Pattern, Chain, FX, Master, Presets, and Settings.">
+  <meta property="og:description" content="Perc8 full manual: tabs, voice parameters, sequencing, and effects.">
   <meta property="og:url" content="https://jtopjian.github.io/perc8-manual.html">
   <meta property="og:site_name" content="Terrarum">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Perc8 Manual | Terrarum">
-  <meta name="twitter:description" content="Full Perc8 manual for Pattern, Chain, FX, Master, Presets, and Settings.">
+  <meta name="twitter:description" content="Perc8 full manual: tabs, voice parameters, sequencing, and effects.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
         <div class="mark" aria-hidden="true"></div>
         <div class="brand-title">
           <strong>Terrarum</strong>
-          <span>Perc8 Manual</span>
+          <span>Perc8</span>
         </div>
       </div>
       <nav class="nav" aria-label="Primary">
@@ -42,110 +42,581 @@
     </header>
 
     <section class="hero reveal">
-      <div class="eyebrow">Perc8 manual</div>
+      <div class="eyebrow">Perc8 Manual</div>
       <div class="hero-title">
         <img class="hero-appicon" src="assets/icons/perc8.png" alt="Perc8 app icon">
-        <h1>Full manual</h1>
+        <h1>Full reference</h1>
       </div>
       <p>
-        This page mirrors the built-in help text and keeps the current Perc8 workflow in one place: Pattern editing, Chain arrangement, FX, Master, Presets, and Settings.
+        Complete documentation of all Perc8 features, parameters, and workflows. This mirrors the in-app manual.
       </p>
-      <div class="doc-nav">
-        <a class="button" href="#overview">Overview</a>
-        <a class="button" href="#pattern">Pattern</a>
-        <a class="button" href="#chain">Chain</a>
-        <a class="button" href="#fx">FX</a>
-        <a class="button" href="#master">Master</a>
-        <a class="button" href="#settings">Settings</a>
-      </div>
     </section>
 
     <section class="grid">
-      <article class="card span6 doc-section reveal" id="overview">
-        <h2>The four main tabs</h2>
-        <p class="doc-copy">SYNTH is where you do most of your work: sound design, pattern sequencing, FX sends, and mixing.
-PRESETS is for saving and loading voices, kits, and full projects.
-SETTINGS handles transport sync, MIDI routing, and output routing.
-HELP is this manual.</p>
-      </article>
+      <article class="card span12 reveal">
+        <pre class="doc-copy">PERC8
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+An eight-voice drum synthesizer and sequencer for iOS. Each voice is an independent synthesizer with its own engine, filter, envelope, LFO, and effects routing. Pattern and chain sequencing let you build anything from a four-bar loop to a full arrangement.
 
-      <article class="card span6 doc-section reveal">
-        <h2>The synth tab</h2>
-        <p class="doc-copy">The title row holds global controls: FILL, PAT / CHN playback mode, and the wrench menu.
-The voice block is the row of eight numbered voice buttons; the selected voice is the one you are editing.
-The tall MUTE button cycles through mute modes.
-The bank / pattern row gives you 8 banks by 8 patterns, or 64 patterns total.
-The scope bar at the bottom switches between PATTERN, CHAIN, FX, and MASTER.</p>
-      </article>
 
-      <article class="card span6 doc-section reveal" id="pattern">
-        <h2>Voice parameters and pattern editing</h2>
-        <p class="doc-copy">Tap ENG, FILT, EQ/DRV, ENV/FX, or LFO to shape the selected voice.
-In PATTERN scope, PLK appears so you can record parameter locks on a step.</p>
-        <div class="hr"></div>
-        <p class="doc-copy"><strong>Engine.</strong> Each voice can use any engine independently. Macros are named per engine and each one controls several synthesis parameters at once.</p>
-        <p class="doc-copy"><strong>Filter.</strong> The post-synthesis filter offers Off, LP, BP, HP, and Notch modes, with SVF, Ladder, Comb, Formant, MS-20, and TB-303 style architectures.</p>
-        <p class="doc-copy"><strong>EQ / Drive.</strong> Low, mid, and high EQ sit at 0.5 for flat response; the drive section adds saturation character and amount.</p>
-        <p class="doc-copy"><strong>Envelope / FX sends.</strong> Attack and decay shape the voice, while FX1, FX2, and FX3 send to DUB, VERB, and MOD.</p>
-        <p class="doc-copy"><strong>LFO.</strong> Two independent LFOs per voice can target macros, filter, amp, drive, pan, EQ, and FX sends.</p>
-        <div class="hr"></div>
-        <p class="doc-copy"><strong>Pattern banks.</strong> Perc8 uses 8 banks with 8 patterns each, for 64 patterns total. While playback is running, a pattern change queues until the next CH.LEN boundary so the transition stays locked to the groove.</p>
-        <p class="doc-copy"><strong>P-lock details.</strong> P-locks can live on trigless steps too. A dot badge marks any step that carries a lock. To clear a lock, select the step and double-tap the locked control back to its base value.</p>
-      </article>
+THE FOUR MAIN TABS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-      <article class="card span6 doc-section reveal">
-        <h2>Sequencing</h2>
-        <p class="doc-copy">Pattern scope is where you build drum loops on the 2x8 step grid.
-Tap steps to toggle trigs or select them for detailed editing.
-Long patterns use page navigation above the grid.</p>
-        <div class="hr"></div>
-        <p class="doc-copy"><strong>TRG.</strong> STEP covers trig, note, velocity, length, condition, and timing. RTRG handles retriggers. EUC generates Euclidean rhythms and can replace, add, subtract, XOR, or intersect with existing steps.</p>
-        <p class="doc-copy"><strong>P-locks.</strong> Tap PLK to arm recording, select a step, change a parameter, and the change is stored on that step. Trigless steps are allowed. A dot badge marks steps that carry p-locks.</p>
-        <p class="doc-copy"><strong>Fill.</strong> Fill is a latch toggle in the title row. Steps conditioned for Fill play only when Fill is active, and Not Fill steps stay silent.</p>
-        <p class="doc-copy"><strong>Pattern banks.</strong> Pattern changes queue on the next CH.LEN boundary so playback stays locked.</p>
-        <p class="doc-copy"><strong>Wrench utilities.</strong> Pattern scope has Copy, Paste, Duplicate, and Clear; Chain scope has Loop On, Loop Off, and Clear.</p>
-      </article>
+SYNTH — Sound design, pattern sequencing, FX, and mixing. This is where you spend most of your time.
 
-      <article class="card span6 doc-section reveal" id="chain">
-        <h2>Chain</h2>
-        <p class="doc-copy">The Chain is the arranger. Instead of looping one pattern forever, you build a sequence of slots that play one after another.
-Chain has two sub-modes: SLOTS and AUTO.</p>
-        <div class="hr"></div>
-        <p class="doc-copy"><strong>Slots.</strong> Add, reorder, duplicate, or delete slots. Each slot references a pattern. The FILL chip on a slot toggles fill mode for that slot.</p>
-        <p class="doc-copy"><strong>Capacity.</strong> The chain can hold up to 64 slots.</p>
-        <p class="doc-copy"><strong>Loop behavior.</strong> Loop On sends playback back to slot 1 after the last slot. Loop Off plays through once and stops.</p>
-        <p class="doc-copy"><strong>Auto.</strong> Double-tap a slot to open automation. Choose a voice and parameter, then edit the lane step by step. Lane actions include Fill, Flat, Ramp, Sine, Triangle, Square, Pulse, Random, and Clear.</p>
-        <p class="doc-copy"><strong>Value hierarchy.</strong> P-lock overrides Chain automation, which overrides Sound. Dim values are inherited; bright values are overridden at the current scope.</p>
-      </article>
+PRESETS — Save and load voices, kits, and full projects.
 
-      <article class="card span6 doc-section reveal" id="fx">
-        <h2>FX</h2>
-        <p class="doc-copy">Perc8 has three global effects. Voice send levels are set in ENV/FX on the Pattern scope, while the FX scope controls the effects themselves and shows live activity.</p>
-        <div class="hr"></div>
-        <p class="doc-copy"><strong>DUB.</strong> A dirty stereo delay with TIME, SYNC, FEEDBACK, TONE, DRIVE, WIDTH, and RETURN.</p>
-        <p class="doc-copy"><strong>VERB.</strong> An industrial reverb with SIZE, DECAY, DIFFUSION, PRE-DLY, TONE, GRIT, SYNC, and RETURN.</p>
-        <p class="doc-copy"><strong>MOD.</strong> A chorus / flanger with MODE, RATE, DEPTH, MANUAL, RES, WIDTH, SYNC, and RETURN.</p>
-      </article>
+SETTINGS — Transport sync, MIDI routing, and output routing.
 
-      <article class="card span6 doc-section reveal" id="master">
-        <h2>Master, presets, and playback</h2>
-        <p class="doc-copy"><strong>Master.</strong> The Master scope is a mixer for the eight voices plus a global master strip.
-Each voice strip has trim, pan, mute, solo, choke, and bus routing.
-The master strip controls width, level, EQ, drive, threshold, release, and ceiling.</p>
-        <div class="hr"></div>
-        <p class="doc-copy"><strong>Mute modes.</strong> Off means a voice tap selects it. Pattern turns a voice tap into pattern mute. Global turns a voice tap into global mute.</p>
-        <p class="doc-copy"><strong>Playback.</strong> PAT loops the selected pattern. CHN plays the chain in order. Fill can be latched on and off live.</p>
-        <p class="doc-copy"><strong>Presets.</strong> Voice presets save one voice. Kit presets save all eight voices plus master and FX. Project presets save the full session, including patterns and chain. Preset actions include Save, Load, Rename, Delete, Export, and Import.</p>
-      </article>
+HELP — This manual.
 
-      <article class="card span6 doc-section reveal" id="settings">
-        <h2>Settings</h2>
-        <p class="doc-copy"><strong>Transport.</strong> Sync Source chooses where Perc8 receives tempo clock. Sync Mode controls whether Perc8 is clock master or follows an external source. MIDI Source selects the MIDI input device.</p>
-        <div class="hr"></div>
-        <p class="doc-copy"><strong>Sequencer.</strong> M.LEN sets the default pattern length. Voices with P.LEN set to Master inherit that value. CH.LEN controls how long the active pattern plays before a queued or chained pattern begins; AUTO follows M.LEN.</p>
-        <p class="doc-copy"><strong>MIDI routing.</strong> Single Channel uses one MIDI channel for all voices. Multi-Timbral assigns each voice its own channel. Pattern sets the MIDI channel used for pattern-level trigger input.</p>
-        <p class="doc-copy"><strong>Output routing.</strong> Main Output selects the stereo pair for the master mix. Per-Bus Routing can send individual voices to separate outputs when the host supports them.</p>
-        <p class="doc-copy"><strong>End of manual.</strong></p>
+
+THE SYNTH TAB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TITLE ROW (top)
+──────────────────────
+
+The strip across the top contains global controls:
+
+• FILL toggle — activate fill mode
+• PAT / CHN — playback mode
+• Wrench icon — pattern utilities
+
+VOICE BLOCK (middle)
+──────────────────────
+
+Eight numbered voice buttons. Tap to select a voice for editing. The selected voice is highlighted. Any knobs, pages, or steps you edit apply to the selected voice.
+
+The voice row reflects the shared mute/solo state. Double-tap a voice to mute or unmute it; the master section and ENV card show the same state.
+
+PATTERN ROW
+──────────────────────
+
+Tap a pattern `A` through `H`. Perc8 uses eight patterns total, and they all share the same project-wide kit.
+
+SCOPE BAR (bottom)
+──────────────────────
+
+Switches what you are editing:
+
+• PATTERN — step sequencing and voice parameters
+• CHAIN — arrangement
+• FX — delay, reverb, mod FX
+• MASTER — mixing and global FX
+
+
+VOICE PARAMETERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tap the ENG, FILT, EQ/DRV, ENV/FX, or LFO tabs to design the selected voice. Everything here applies to the selected voice. Tabs along the top are TRG (trigger and step editing), ENG (engine selection and macros), FILT (post-synthesis filter), EQ/DRV (EQ, pre-drive emphasis, and drive), ENV/FX (envelope control and FX sends), and LFO (two modulation LFOs). In PATTERN scope, a PLK tab also appears. Tap it to arm p-lock recording (see P-LOCKS below).
+
+
+ENGINE (ENG)
+──────────────────────
+
+The engine is the core synthesizer that generates the raw drum sound. Each voice can use any engine independently. Engines are grouped by type: Kicks, Snares/Claps, Cymbals/Hats, Percussion, and Tone.
+
+`Noise Perc` remains the percussion-oriented noise engine. `Noise Tone` is a pure noise oscillator with no pitch layer. Its macro surface is `Type A`, `Type B`, `Blend`, `Mod`, `Color`, `Focus`, `Drive`, and `Tail`: the first two sweep the two internal noise sources through continuous type ranges, `Blend` mixes the second source into the body, `Mod` lets source B push source A around, and the remaining controls shape tone, resonance, saturation, and release.
+
+MACRO KNOBS
+
+Each engine has 8 macro knobs with names specific to that engine. Each macro intelligently controls several underlying synthesis parameters at once. Carbon Kick macros, for example:
+
+• M1 BODY — Sub and body weight
+• M2 PUNCH — Pitch sweep depth
+• M3 DECAY — Tail length
+• M4 ATTACK — Transient level
+• M5 GRIT — Saturation and drive
+• M6 TONE — Filter character
+• M7 MOTION — Analog drift
+• M8 DYNAMICS — Velocity routing
+
+Every engine has its own macro names, designed to stay musical and immediate.
+
+
+FILTER (FILT)
+──────────────────────
+
+A post-synthesis filter shapes the tone after the engine has generated its sound.
+
+MODE — Filter mode: Off, LP, BP, HP, or Notch.
+
+TYPE — Filter architecture: SVF, Ladder, Comb, Formant, MS-20, TB-303. Each has a distinct character.
+
+CUTOFF — Filter cutoff frequency. Lower values are darker; higher values are brighter.
+
+RES — Resonance. Adds a peak at the cutoff frequency. High values create a ringing character.
+
+ENV — How much the amplitude envelope modulates the filter cutoff.
+
+
+EQ AND DRIVE (EQ/DRV)
+──────────────────────
+
+EQ/DRV is split into three submenus:
+
+EQ — LOW, MID, MIDF, HIGH
+PRE — MODE, FREQ, Q, AMT
+DRIVE — TYPE, AMOUNT, MIX, BIAS
+
+LOW — Boost or cut the lows.
+
+MID — Boost or cut the midrange.
+
+MIDF — Center frequency of the mid EQ band.
+
+HIGH — Boost or cut the highs.
+
+All EQ bands are centered at 0.5 (flat). Turn up to boost, turn down to cut.
+
+TYPE — Saturation character: Clean, Tube, Rat, Dist, Fuzz, Fold, and more.
+
+AMOUNT — How much drive to apply. Drive adds edge, warmth, or grit to any voice — even subtle amounts add character.
+
+MIX — Dry/wet blend for the drive stage. Lower values preserve more of the pre-drive body and low end.
+
+BIAS — Asymmetry of the waveshaper. At the center position (0.5) the shaper is symmetric. Turning lower or higher tilts the positive and negative halves of the waveform differently, adding even-order harmonic character and shifting the perceived weight of the sound.
+
+ENVELOPE CONTROL AND FX SENDS (ENV/FX)
+──────────────────────
+
+ENV/FX is split into two submenus:
+
+ENV — ATK, DEC, DUCK, SYNC
+FX — FX SEND 1, FX SEND 2, FX SEND 3
+
+AMPLITUDE ENVELOPE
+
+The envelope shapes the overall volume contour of the voice.
+
+ATK — How long it takes to reach full volume after a trigger. Very short = immediate; longer = swell in.
+
+DEC — How long the sound fades after reaching peak level.
+
+TRIG LEN (set on the TRG page) controls how long the trigger is held before the decay begins. It uses a fixed 1/16-note time grid, not the current step size. When S.LEN is 1/16, a TRIG LEN of 1/16 is also exactly one step. Short values below 1/16 are finer note divisions, and longer values extend from 1/8 up to 64 sixteenth-notes. A TRIG LEN of 64 spans four bars on a 16-step pattern.
+
+DUCK — Rhythmic volume pumping depth after the envelope. At 0 there is no pumping. Higher values pull the voice down harder at each sync cycle, then let it recover.
+
+SYNC — The ducking division. Shorter values pump faster. Longer values let the voice breathe over bigger note values. The ducking stays locked to the transport grid.
+
+FX SENDS
+
+Controls how much of this voice is sent to each global effect:
+
+FX1 — Amount to DUB (delay).
+
+FX2 — Amount to VERB (reverb).
+
+FX3 — Amount to MOD (chorus/flanger).
+
+At 0, the voice is completely dry. At 1, the full signal goes to that effect. All three can run simultaneously.
+
+
+LFO (LFO1 AND LFO2)
+──────────────────────
+
+Perc8 has two independent LFOs per voice. An LFO oscillates slowly and modulates (wiggles) a parameter over time. Select LFO1 or LFO2 with the L1 / L2 tabs.
+
+WAVE — Waveform: sine, triangle, square, sawtooth, and more.
+
+TARGET — What the LFO modulates: any macro (M1–M8), filter cutoff, resonance, envelope, amp level, drive, pan, EQ, FX sends. LFO2 can also target LFO1.
+
+DEPTH — Modulation amount. At 0, no effect. At 1, full swing.
+
+RATE — Speed in Hz (when not synced). Slow = gradual movement; fast = vibrato or tremolo.
+
+SYNC — Lock the LFO to song tempo. When on, RATE becomes SYNC DIV: 1/4, 1/8, 1/16, triplets, dotted values, and more.
+
+TRIG — Reset the LFO to its start on every trigger. Makes modulation consistent and rhythmic.
+
+PHASE — Offsets the waveform position. At 0 the LFO behaves exactly like the original no-phase behavior. Negative and positive values shift the waveform earlier or later in its cycle.
+
+ONE SHOT — The LFO runs one full cycle after each trigger, then stops. Great for pitch sweeps and filter sweeps.
+
+The LFO modulation range is shown as an arc overlay on the knob it is targeting.
+
+
+SEQUENCING (PATTERN)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The Pattern scope is where you build your drum loops. It shows a step grid for the selected voice, with 16 steps visible by default as two rows of eight. Tap steps to activate or deactivate triggers. Tap a triggered step a second time to select it for detailed editing below the grid.
+
+When a pattern is longer than 16 steps, a page navigation bar appears above the grid. Use the left and right arrows to move through pages; the center label shows the current step range (e.g., 17–32 / 64). You can extend pattern length via the P.LEN picker in the wrench or the Len control in the context strip.
+
+
+TRG PAGE — STEP EDITING
+──────────────────────
+
+The TRG page has three sub-pages: STEP, RTRG, and EUC.
+
+STEP
+
+TRIG — On/off for this step.
+
+NOTE — MIDI note (pitch). Change here for melodic or pitched hits.
+
+VEL — Velocity (0–127). Higher is louder and usually brighter.
+
+LEN — Trigger length on a fixed 1/16-note grid. When S.LEN is 1/16, LEN and step length match; other S.LEN values make LEN shorter or longer than one step.
+
+PROB — How often this step fires. In P-LOCK REC mode this same control is labeled COND (Condition) — the underlying parameter is the same either way. Options: Always (default), Fill (only when Fill is active), Not Fill (only when Fill is off), 1:2 (every other loop), 2:3 (two of every three loops), and more probability and ratio options. These let your pattern evolve over multiple loops without manual changes.
+
+RTRG (RETRIGGER)
+
+Repeats a note rapidly within a single step — rolls, flams, and machine-gun effects.
+
+RTRG — Enable or disable retriggering (Off / On).
+
+COUNT — Repeats per step (2, 4, 8, 16…).
+
+LEN — Duration of each retrig hit.
+
+VEL — Retrig hit velocity as a percentage of the original.
+
+EUC (EUCLIDEAN SEQUENCER)
+
+Euclidean sequencing distributes a number of triggers as evenly as possible across the pattern steps — a technique that naturally produces rhythms common in world music and electronic music (e.g., 5 pulses in 16 steps gives a clave-like pattern).
+
+PULSE — Number of triggers to place. At 0, no triggers are generated. At the maximum (equal to the step count), every step fires.
+
+ROT — Rotation: shifts all generated triggers left or right by N steps. Positive rotates forward; negative rotates back.
+
+VEL — Velocity applied to generated trigger steps (0–127).
+
+OP — How to apply the Euclidean pattern to the existing steps: Replace (overwrite all steps), Add (add triggers without removing existing ones), Subtract (remove generated positions from existing triggers), XOR (flip each generated position), or Intersect (keep only steps that are in both).
+
+APPLY — Press to commit the Euclidean pattern to the step grid using the current PULSE, ROT, VEL, and OP settings. A preview overlay shows exactly where triggers will land before you commit.
+
+
+P-LOCKS (PARAMETER LOCKS)
+──────────────────────
+
+P-locks let you change almost any sound parameter on a per-step basis. A p-locked value stays active until the next trig for that voice resets it.
+
+To add a p-lock:
+
+1. Tap PLK in the section selector to arm recording.
+2. Select the step you want to lock.
+3. Adjust any parameter (macros, filter, envelope, LFO).
+4. The change is saved as a p-lock for that step.
+5. Tap PLK again to disarm.
+
+Steps with p-locks show a small dot badge in the step grid.
+
+P-locks can also be set on &quot;trigless&quot; steps — steps that don&#x27;t trigger a note but still change a parameter. The changed value remains active until a later trig resets it. Useful for filter sweeps and sustained timbre shifts within a pattern.
+
+To clear a p-lock: select the step, then double-tap the locked control to reset it to the base value.
+
+
+FILL
+──────────────────────
+
+Fill is a latch toggle in the title row. When active, any step with PROB/COND = Fill starts playing, and any step with Not Fill stops.
+
+This lets you design fill variations directly into your pattern. Set a snare roll on steps 13–16 with condition = Fill. Normally those steps are silent. Tap FILL and the roll kicks in. Tap FILL again to return to the main groove.
+
+Fill activates and stops instantly — use it live for dramatic drops and builds.
+
+
+PATTERNS
+──────────────────────
+
+Perc8 uses 8 patterns total: A through H. Tap a pattern to select it. During playback, switching patterns queues the change at the next CH.LEN boundary so the rhythm stays locked. The pattern label pulses with the upcoming pattern name while a switch is queued. Patterns store step data, trigger variation, and mute states. Voice engines and base knob settings are shared across the whole project.
+
+
+WRENCH UTILITIES
+──────────────────────
+
+Tap the wrench icon for scope-specific utilities.
+
+PATTERN scope: Copy, Paste, Duplicate, and Clear the pattern. Also includes Copy, Paste, and Clear for the selected voice&#x27;s sound.
+
+CHAIN scope: Loop On (chain repeats from slot 1 after the last slot), Loop Off (plays through once and stops), and Clear (erase the chain).
+
+
+CHAIN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The Chain is an arranger. Instead of looping one pattern forever, you build a sequence of patterns that play one after another: verses, choruses, drops, and outros. The Chain scope has two sub-modes: SLOTS and CHAIN.
+
+SLOTS
+──────────────────────
+
+Each slot references one pattern (`A-H`). You can have up to 64 slots.
+
+Add slot — Tap + and choose a pattern.
+
+Reorder — Drag slots to rearrange playback order.
+
+Duplicate — Clone a slot for another instance of the same pattern.
+
+Delete — Remove a slot.
+
+FILL chip — Each slot has a FILL chip on the right. Tap it to toggle fill mode for that slot. When fill is active on a slot, steps conditioned Fill will fire and steps conditioned Not Fill will stay silent for that slot.
+
+Double-tap a slot to open CHAIN using that slot as your current context.
+
+CHAIN LOOP BEHAVIOR
+──────────────────────
+
+Use the chain wrench to configure looping.
+
+Loop On — Chain loops back to slot 1 after the last slot. Good for live performance.
+
+Loop Off — Chain plays through once, then stops. Good for composed arrangements.
+
+
+CHAIN (TIMELINE)
+──────────────────────
+
+CHAIN shows the whole arrangement as one continuous timeline. It keeps the explicit slot model underneath, but adds a scrubber strip so longer arrangements are easier to navigate.
+
+Use CHAIN to sweep a filter through a build, increase reverb on a breakdown, shift an LFO rate over several slot occurrences, or pan a voice across a chorus.
+
+How it works:
+
+1. Use the top timeline strip to scrub the viewport across the song.
+2. Select a voice and a parameter (e.g., Voice 3, Filter Cutoff).
+3. Edit the current viewport directly in the vertical node lane below.
+4. Use `ZOOM` to change how much arrangement time the viewport covers.
+5. Use `RES` to batch several timeline steps into one editable row when per-step resolution is too fine.
+6. Use `HOLD` when explicit chain values should persist until the next explicit value. Use `LINEAR` when values should ramp between explicit anchors.
+
+Nearly any parameter can be automated: macros, filter, envelope, LFO, FX sends, and more. The timeline strip stays scrub-only; slot management and slot picking live in SLOTS.
+
+Node meanings:
+
+• No node — base sound value from the voice.
+• Solid node — explicit chain value stored on that step.
+• Hollow dim node — HOLD-resolved value carried from an earlier explicit chain step.
+• Hollow bright node — LINEAR-resolved value between explicit anchors.
+
+Editing a derived step creates a new explicit node there. Double-tap a solid node to clear the explicit chain value at that step.
+
+
+VALUE HIERARCHY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When multiple sources set the same parameter, Perc8 resolves them in this order (highest wins): P-lock &gt; Chain &gt; Sound.
+
+Sound defines the voice baseline. Chain values can override it per step in a slot or timeline occurrence. P-locks override everything on the steps where they exist.
+
+A dim value means it is inherited from a lower layer. A bright value means it is overridden at the current scope. A dot badge on a step means a p-lock exists there.
+
+When you see a dim value in Pattern or Chain view, you&#x27;re seeing the inherited baseline. Edit it to create an override at that level.
+
+
+FX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Perc8 has three global effects. Each voice sends signal to them via the `FX` submenu inside `ENV/FX` on the PATTERN scope. Configure the effects themselves in the FX scope. The FX scope shows real-time activity indicators for each effect.
+
+
+DUB — DIRTY DELAY (FX1)
+──────────────────────
+
+A saturating stereo delay with a dirty, tape-like character. Inspired by dub reggae technique.
+
+TIME — Delay time. Locks to a note division when SYNC is on.
+
+SYNC — Toggle tempo sync.
+
+FEEDBACK — How much of the delayed signal loops back. Higher = longer, cascading echoes.
+
+TONE — Tone on the delayed signal. Lower = warmer tape-style echo.
+
+DRIVE — Saturation in the feedback path. Adds grit as delays repeat.
+
+WIDTH — Stereo spread of the delay.
+
+RETURN — Overall wet level.
+
+
+VERB — INDUSTRIAL REVERB (FX2)
+──────────────────────
+
+A room reverb with an industrial, gritty character. Adds depth and dimension to any sound.
+
+SIZE — Room size. Larger = bigger reverb tail.
+
+DECAY — How long the reverb rings after the source sound ends.
+
+DIFFUSION — Scattering of reflections. Higher = smoother; lower = grainier, more textured.
+
+PRE-DLY — Silence before reverb starts, preserving the punch of the direct sound. SYNC maps pre-delay to tempo divisions.
+
+TONE — Filters the reverb. Lower = dark cave; higher = bright, airy space.
+
+GRIT — Saturation inside the reverb. For industrial or lo-fi textures.
+
+SYNC — Tempo sync for PRE-DLY.
+
+RETURN — Overall wet level.
+
+
+MOD — CHORUS / FLANGER (FX3)
+──────────────────────
+
+Switches between two classic hardware modulation characters.
+
+MODE — CE-2 (Boss CE-2 Chorus: warm, lush stereo widening) or BF-2 (Boss BF-2 Flanger: metallic, jet-plane sweep).
+
+RATE — Speed of modulation.
+
+DEPTH — Amount of pitch movement.
+
+MANUAL — (Flanger only) Manual delay time, controls the comb sweep.
+
+RES — (Flanger only) Resonance. Higher gets more metallic and can self-oscillate.
+
+WIDTH — Stereo spread.
+
+SYNC — Lock RATE to tempo.
+
+RETURN — Overall wet level.
+
+
+MASTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The Master scope is a mixing desk view of all 8 voices plus a global master bus strip.
+
+VOICE CHANNEL STRIPS (1–8)
+──────────────────────
+
+TRIM — Output level in dB. Use to balance voices in the mix.
+
+PAN — Stereo position.
+
+M — Mute this voice.
+
+S — Solo (silences all others).
+
+CHOKE — Assign a choke group (0–3). When any voice in the group triggers, it cuts off all others in the same group. Use for open/closed hi-hat pairs.
+
+BUS — Output bus routing for multi-channel host setups.
+
+MASTER BUS STRIP
+──────────────────────
+
+WIDTH — Stereo width above the mono crossover.
+
+MONO — Frequencies below this point are summed to mono. It uses the same frequency scale as the filter cutoff controls. At the minimum setting it is effectively off.
+
+LEVEL — Master output trim in dB.
+
+LOW / MID / HIGH — Three-band master EQ.
+
+MIDF — Mid EQ center frequency.
+
+TYPE — Master drive character.
+
+DRIVE — Amount of master saturation.
+
+THRESH — Drive threshold.
+
+REL — Drive release time.
+
+CEIL — Output ceiling / hard limit.
+
+
+MUTE / SOLO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Perc8 has one shared mute/solo state per voice, and it is reflected in all three places you can edit it:
+
+• Double-tap a voice in the shell voice row to mute or unmute it.
+• Tap MUTE or SOLO in the master section to change the same voice state.
+• Tap MUTE or SOLO in the ENV card to change the same voice state.
+
+When a voice is muted or soloed in one place, the other views update immediately.
+
+The ENV card&#x27;s MUTE and SOLO buttons are persistent toggles. Tap the same button again to turn it back off.
+
+
+PLAYBACK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PAT / CHN TOGGLE
+
+PAT — Plays the selected pattern on loop. Switch patterns in real time; changes queue at the next boundary to stay in sync.
+
+CHN — Plays through chain slots in order. Use this for full arrangement playback.
+
+FILL
+
+Tap FILL to latch fill mode on. Steps with PROB/COND = Fill begin playing; steps with Not Fill stop. Tap FILL again to return to the normal groove.
+
+CHAIN LOOP (CHAIN WRENCH)
+
+Loop On — Chain loops back to slot 1 indefinitely.
+
+Loop Off — Chain plays once and stops at the end.
+
+
+PRESETS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open the PRESETS tab to save and load sounds.
+
+VOICE PRESET — Saves one voice&#x27;s complete sound: engine, all macros, filter, EQ, drive, envelope, LFO, and FX sends. Use to save great kick, snare, or hi-hat sounds and reuse them across kits and projects.
+
+KIT PRESET — Saves all 8 voices together with the master bus and FX settings. This is your full drum kit. Share kits with other users via export.
+
+PROJECT PRESET — Saves everything: full kit plus all pattern data, chain arrangement, transport and MIDI settings, and sequencer state. A complete snapshot of your session.
+
+PRESET ACTIONS
+
+Save — Write current state to a new preset.
+
+Load — Replace current state with a saved preset.
+
+Rename — Give a preset a new name.
+
+Delete — Remove permanently.
+
+Export — Share to Files, AirDrop, etc.
+
+Import — Load a preset file from another source.
+
+
+SETTINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TRANSPORT
+
+Sync Source — Where Perc8 receives its tempo clock.
+
+Sync Mode — Whether Perc8 is the clock master or follows an external source.
+
+MIDI Source — Which MIDI input device to listen to.
+
+SEQUENCER
+
+M.LEN (Master Length) — The default number of steps in a pattern. Voices with P.LEN set to &quot;Master&quot; inherit this value. Setting M.LEN to 16 means all master-length patterns are 16 steps long.
+
+CH.LEN (Change Length) — Controls how long the active pattern plays before a queued or chained pattern begins. When you tap a new pattern during playback, Perc8 waits until the current pattern has played for a full CH.LEN cycle before switching. CH.LEN = 16 means the switch happens on the next 16-step boundary. CH.LEN = AUTO follows M.LEN. A shorter CH.LEN gives faster pattern changes; a longer one keeps transitions rhythmically locked.
+
+While a pattern switch is queued, the pattern label pulses between the current pattern name and the incoming pattern name so you always know what is coming next.
+
+MIDI ROUTING
+
+Single Channel — All voices respond on one MIDI channel.
+
+Multi-Timbral — Each voice (1–8) gets its own MIDI channel for per-voice control from a sequencer or DAW.
+
+Pattern — Sets the MIDI channel used for pattern-level trigger input.
+
+OUTPUT ROUTING
+
+Main Output — Which stereo hardware output pair carries the master mix.
+
+Per-Bus Routing — If your host supports multiple outputs, route individual voices to separate hardware outputs using the BUS setting in the Master scope.
+
+
+END OF MANUAL
+</pre>
       </article>
     </section>
 
@@ -154,7 +625,7 @@ The master strip controls width, level, EQ, drive, threshold, release, and ceili
       <div>
         <a href="index.html">Apps</a>
         <span style="padding:0 8px">·</span>
-        <a href="perc8-tutorials.html">Tutorials</a>
+        <a href="perc8.html">Perc8</a>
         <span style="padding:0 8px">·</span>
         <a href="support.html">Support</a>
       </div>
