@@ -1,0 +1,128 @@
+<!-- pulseq.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pulseq | Terrarum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pulseq AUv3 multi-stage MIDI sequencer support and quick start.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f8fbfd">
+  <link rel="canonical" href="https://jtopjian.github.io/pulseq.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pulseq | Terrarum">
+  <meta property="og:description" content="Pulseq AUv3 multi-stage MIDI sequencer support and quick start.">
+  <meta property="og:url" content="https://jtopjian.github.io/pulseq.html">
+  <meta property="og:site_name" content="Terrarum">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pulseq | Terrarum">
+  <meta name="twitter:description" content="Pulseq AUv3 multi-stage MIDI sequencer support and quick start.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>Pulseq</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Apps</a>
+        <a class="active" aria-current="page" href="pulseq.html">Pulseq</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero reveal">
+      <div class="eyebrow">MIDI Sequencer</div>
+      <div class="hero-title">
+      <img class="hero-appicon" src="assets/icons/pulseq.png" alt="Pulseq app icon">
+      <h1>Pulseq</h1>
+      </div>
+      <p>
+        AUv3 multi-stage MIDI sequencer for iOS. Supports 1 to 16 stages, with gate behavior, scale quantization, and MIDI CC modulation for elastic, evolving patterns.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="support.html">Get Support</a>
+        <a class="button" href="index.html">Back to Apps</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card span6 reveal">
+        <h2>Quick Start</h2>
+        <ol class="list">
+          <li>Open your Audio Unit host.</li>
+          <li>Add Pulseq as an AUv3 MIDI effect.</li>
+          <li>Add a synth on another track.</li>
+          <li>Route MIDI from Pulseq to the synth.</li>
+          <li>Press play in the host transport.</li>
+        </ol>
+        <div class="hr"></div>
+        <div class="notice">
+          <strong>Tip:</strong> If there is no sound, verify MIDI routing first.
+        </div>
+      </article>
+
+      <article class="card span6 reveal">
+        <h2>What Makes Pulseq Different</h2>
+        <div class="kv">
+          <div>Stages</div>
+          <div><strong>Expandable 1 to 16, each spanning multiple clock pulses</strong></div>
+          <div>Gate behavior</div>
+          <div><strong>9 gate modes per stage: single, multi, divisions, probability, programmable, and tied</strong></div>
+          <div>Modulation</div>
+          <div><strong>Per-stage MIDI CC lanes for parameter-locking a connected synth</strong></div>
+          <div>Motion</div>
+          <div><strong>Forward, Ping-Pong, Random, and Fixed Length play modes</strong></div>
+          <div>Musicality</div>
+          <div><strong>17 scales, root selection, swing, gate length, and glide/portamento</strong></div>
+        </div>
+      </article>
+
+      <article class="card span6 reveal">
+        <h2>Usage Notes</h2>
+        <div class="kv">
+          <div>Plugin type</div>
+          <div><strong>MIDI only</strong> (no audio output)</div>
+          <div>Best hosts</div>
+          <div><strong>AUM, Drambo, Logic Pro, GarageBand</strong></div>
+          <div>Clock</div>
+          <div><strong>Follow host transport, tempo, and clock division</strong></div>
+          <div>Transport</div>
+          <div><strong>Runs in sync with the host clock</strong></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <h2>Common Questions</h2>
+        <ul class="list">
+          <li><strong>No sound:</strong> Pulseq outputs MIDI only. Route it to a synth.</li>
+          <li><strong>Notes feel out of key:</strong> Enable <em>Snap Notes to Scale</em>, or check the root and scale selection.</li>
+          <li><strong>Stage repeats or skips:</strong> Check the stage's gate mode and programmable gate pattern.</li>
+          <li><strong>Modulation not landing:</strong> Confirm the CC lane targets match your synth's parameter, and that the stage value is not set to <em>Don't Send</em>.</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© Joe Topjian</div>
+      <div>
+        <a href="index.html">Apps</a>
+        <span style="padding:0 8px">·</span>
+        <a href="support.html">Support</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/site.js"></script>
+</body>
+</html>
