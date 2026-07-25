@@ -5,18 +5,22 @@
   <meta charset="utf-8">
   <title>Pulseq | Terrarum</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pulseq AUv3 multi-stage MIDI sequencer support and quick start.">
+  <meta name="description" content="Pulseq multi-stage MIDI sequencer support and quick start — up to 16 stages, gate modes, scales, split modes, scenes, and chain. AUv3 and standalone.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#f8fbfd">
-  <link rel="canonical" href="https://jtopjian.github.io/pulseq.html">
+  <link rel="canonical" href="https://terrarum.net/pulseq.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pulseq | Terrarum">
-  <meta property="og:description" content="Pulseq AUv3 multi-stage MIDI sequencer support and quick start.">
-  <meta property="og:url" content="https://jtopjian.github.io/pulseq.html">
+  <meta property="og:description" content="Pulseq multi-stage MIDI sequencer support and quick start — up to 16 stages, gate modes, scales, split modes, scenes, and chain. AUv3 and standalone.">
+  <meta property="og:url" content="https://terrarum.net/pulseq.html">
   <meta property="og:site_name" content="Terrarum">
+  <meta property="og:image" content="https://terrarum.net/assets/icons/pulseq.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Pulseq | Terrarum">
-  <meta name="twitter:description" content="Pulseq AUv3 multi-stage MIDI sequencer support and quick start.">
+  <meta name="twitter:description" content="Pulseq multi-stage MIDI sequencer support and quick start — up to 16 stages, gate modes, scales, split modes, scenes, and chain. AUv3 and standalone.">
+  <meta name="twitter:image" content="https://terrarum.net/assets/icons/pulseq.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -47,7 +51,7 @@
       <h1>Pulseq</h1>
       </div>
       <p>
-        AUv3 multi-stage MIDI sequencer for iOS. Supports 1 to 16 stages, with gate behavior, scale quantization, and MIDI CC modulation for elastic, evolving patterns.
+        A multi-stage MIDI sequencer with up to 16 stages, each setting its own note, velocity, gate behavior, and length. Add scale quantization, MIDI CC modulation, and split-mode sequencing, then arrange everything with scenes and a chain. Runs as an AUv3 MIDI effect in your host, and standalone.
       </p>
       <div class="hero-actions">
         <a class="button primary" href="support.html">Get Support</a>
@@ -59,15 +63,16 @@
       <article class="card span6 reveal">
         <h2>Quick Start</h2>
         <ol class="list">
-          <li>Open your Audio Unit host.</li>
-          <li>Add Pulseq as an AUv3 MIDI effect.</li>
-          <li>Add a synth on another track.</li>
-          <li>Route MIDI from Pulseq to the synth.</li>
-          <li>Press play in the host transport.</li>
+          <li><strong>Set the scale:</strong> Choose a scale and root note to constrain notes to a musical key.</li>
+          <li><strong>Configure stages:</strong> Tap a stage to edit its note, velocity, step count, and gate mode.</li>
+          <li><strong>Choose gate modes:</strong> Single for one trigger per stage, Multi for repeats, or Prog for a pattern you draw.</li>
+          <li><strong>Shape the timing:</strong> Add swing for groove, then expand Cycle Map to see pattern restarts against musical bars.</li>
+          <li><strong>Try split modes:</strong> Serial to alternate lanes A and B by repeat counts, or Parallel to run both at once on two MIDI channels.</li>
+          <li><strong>Build with scenes:</strong> Capture setups into the 16 scene slots, then chain them in the Chain editor to arrange a full track.</li>
         </ol>
         <div class="hr"></div>
         <div class="notice">
-          <strong>Tip:</strong> If there is no sound, verify MIDI routing first.
+          <strong>Tip:</strong> Pulseq outputs MIDI only — route it to a synth. In standalone, choose a MIDI route first; if it is missing, a recovery screen offers Retry MIDI Setup.
         </div>
       </article>
 
@@ -75,39 +80,49 @@
         <h2>What Makes Pulseq Different</h2>
         <div class="kv">
           <div>Stages</div>
-          <div><strong>Expandable 1 to 16, each spanning multiple clock pulses</strong></div>
-          <div>Gate behavior</div>
-          <div><strong>9 gate modes per stage: single, multi, divisions, probability, programmable, and tied</strong></div>
+          <div><strong>Up to 16, each with note, velocity, gate behavior, and length in pulses</strong></div>
+          <div>Gate modes</div>
+          <div><strong>9 modes — Off, Single, Multi, Multi/2-4, Probability, Long, and Programmable</strong></div>
           <div>Modulation</div>
-          <div><strong>Per-stage MIDI CC lanes for parameter-locking a connected synth</strong></div>
+          <div><strong>Up to 8 MIDI CC lanes; a dash means Don't Send</strong></div>
+          <div>Pitch</div>
+          <div><strong>17 scales, root selection, and Snap Notes to Scale</strong></div>
+          <div>Split modes</div>
+          <div><strong>None, Serial (A then B by repeats), or Parallel on two MIDI channels</strong></div>
           <div>Motion</div>
           <div><strong>Forward, Ping-Pong, Random, and Fixed Length play modes</strong></div>
-          <div>Musicality</div>
-          <div><strong>17 scales, root selection, swing, gate length, and glide/portamento</strong></div>
+          <div>Arrangement</div>
+          <div><strong>16 scene slots and a Chain editor for full-track arrangement</strong></div>
         </div>
       </article>
 
       <article class="card span6 reveal">
         <h2>Usage Notes</h2>
         <div class="kv">
-          <div>Plugin type</div>
+          <div>Runs as</div>
+          <div><strong>AUv3 MIDI effect in a host, or standalone</strong></div>
+          <div>Output</div>
           <div><strong>MIDI only</strong> (no audio output)</div>
           <div>Best hosts</div>
           <div><strong>AUM, Drambo, Logic Pro, GarageBand</strong></div>
+          <div>Standalone tempo</div>
+          <div><strong>Internal clock, 20 to 300 BPM</strong></div>
           <div>Clock</div>
-          <div><strong>Follow host transport, tempo, and clock division</strong></div>
-          <div>Transport</div>
-          <div><strong>Runs in sync with the host clock</strong></div>
+          <div><strong>Pulse value 1 to 1/32, with triplet and dotted options</strong></div>
+          <div>Apply changes</div>
+          <div><strong>Immediate, Next Pulse, or Next Bar</strong></div>
         </div>
       </article>
 
       <article class="card reveal">
         <h2>Common Questions</h2>
         <ul class="list">
-          <li><strong>No sound:</strong> Pulseq outputs MIDI only. Route it to a synth.</li>
-          <li><strong>Notes feel out of key:</strong> Enable <em>Snap Notes to Scale</em>, or check the root and scale selection.</li>
-          <li><strong>Stage repeats or skips:</strong> Check the stage's gate mode and programmable gate pattern.</li>
-          <li><strong>Modulation not landing:</strong> Confirm the CC lane targets match your synth's parameter, and that the stage value is not set to <em>Don't Send</em>.</li>
+          <li><strong>No sound:</strong> Check the top-bar MIDI output status first. In standalone, a recovery screen appears if the route is missing — reconnect it, choose another, or tap Retry MIDI Setup. Then confirm the MIDI channel matches and that stages are not set to Off.</li>
+          <li><strong>Notes sound wrong:</strong> Check Scale and Root, then the raw stage notes.</li>
+          <li><strong>Timing feels off:</strong> Check Clock before Swing — most timing confusion starts there.</li>
+          <li><strong>Notes hang:</strong> Open Settings, expand Panic, and tap Panic to send note cleanup and reset the transport.</li>
+          <li><strong>Pattern too dense or sparse:</strong> Adjust Multi usage, stage lengths, and gate probability.</li>
+          <li><strong>Reporting a problem:</strong> In-app Help has Report a Problem — Copy or Share a JSON snapshot of transport, routing, and settings to make a bug reproducible.</li>
         </ul>
       </article>
     </section>

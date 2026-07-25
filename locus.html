@@ -1,0 +1,150 @@
+<!-- locus.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Locus | Terrarum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Locus AUv3 MIDI generator support and quick start — locked-loop mutator for evolving one-bar loops.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f8fbfd">
+  <link rel="canonical" href="https://terrarum.net/locus.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Locus | Terrarum">
+  <meta property="og:description" content="Locus AUv3 MIDI generator support and quick start — locked-loop mutator for evolving one-bar loops.">
+  <meta property="og:url" content="https://terrarum.net/locus.html">
+  <meta property="og:site_name" content="Terrarum">
+  <meta property="og:image" content="https://terrarum.net/assets/icons/locus.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Locus | Terrarum">
+  <meta name="twitter:description" content="Locus AUv3 MIDI generator support and quick start — locked-loop mutator for evolving one-bar loops.">
+  <meta name="twitter:image" content="https://terrarum.net/assets/icons/locus.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Terrarum</strong>
+          <span>Locus</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Apps</a>
+        <a class="active" aria-current="page" href="locus.html">Locus</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero reveal">
+      <div class="eyebrow">MIDI Generator</div>
+      <div class="hero-title">
+      <img class="hero-appicon" src="assets/icons/locus.png" alt="Locus app icon">
+      <h1>Locus</h1>
+      </div>
+      <p>
+        An AUv3 MIDI generator for iOS — a locked-loop mutator that creates evolving one-bar loops without losing their identity. Freeze a loop to build on it, or raise the variation and let it mutate while preserving its character.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="support.html">Get Support</a>
+        <a class="button" href="index.html">Back to Apps</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card span6 reveal">
+        <h2>Quick Start</h2>
+        <ol class="list">
+          <li>Open your Audio Unit host (AUM, Drambo, Logic Pro).</li>
+          <li>Add Locus as an AUv3 MIDI effect or MIDI generator.</li>
+          <li>Route Locus MIDI output to a synth on another track.</li>
+          <li>Choose an archetype and press Create.</li>
+          <li>Adjust Variation to freeze or evolve the loop.</li>
+        </ol>
+        <div class="hr"></div>
+        <div class="notice">
+          <strong>Note:</strong> Locus outputs MIDI only. It will not make sound until routed to a synth.
+        </div>
+      </article>
+
+      <article class="card span6 reveal">
+        <h2>What Makes Locus Different</h2>
+        <div class="kv">
+          <div>Frozen loops</div>
+          <div><strong>Variation at 0 never changes — a stable foundation to build tracks on</strong></div>
+          <div>Evolving loops</div>
+          <div><strong>Variation above 0 mutates the loop gradually while preserving its identity</strong></div>
+          <div>Deterministic</div>
+          <div><strong>Same settings always produce the same output</strong></div>
+          <div>RT-safe</div>
+          <div><strong>Real-time-safe audio thread — zero glitches under load</strong></div>
+        </div>
+      </article>
+
+      <article class="card span6 reveal">
+        <h2>The 13 Archetypes</h2>
+        <p class="small">Each archetype gives Locus a distinct musical personality to start from.</p>
+        <ul class="list">
+          <li><strong>Puncture</strong> — sharp, accented pointillism</li>
+          <li><strong>Groove</strong> — swung, feel-forward motion</li>
+          <li><strong>Pulse</strong> — steady, driving repetition</li>
+          <li><strong>Cascade</strong> — rolling, descending runs</li>
+          <li><strong>Thump</strong> — weighty, low-centered hits</li>
+          <li><strong>Cluster</strong> — dense, compact groupings</li>
+          <li><strong>Chaos</strong> — unpredictable, scattered energy</li>
+          <li><strong>Even Pulse</strong> — grid-aligned even spacing</li>
+          <li><strong>Interlock</strong> — two-part hocketing patterns</li>
+          <li><strong>Call/Answer</strong> — conversational phrasing</li>
+          <li><strong>Arc</strong> — rising and falling shapes</li>
+          <li><strong>Wander</strong> — meandering, free motion</li>
+          <li><strong>Sparse Fractal</strong> — self-similar space</li>
+        </ul>
+      </article>
+
+      <article class="card span6 reveal">
+        <h2>Usage Notes</h2>
+        <div class="kv">
+          <div>Plugin type</div>
+          <div><strong>MIDI only</strong> (no audio output)</div>
+          <div>Best hosts</div>
+          <div><strong>AUM, Drambo, Logic Pro, GarageBand</strong></div>
+          <div>Grid</div>
+          <div><strong>One-bar motifs on a fixed 16-step grid</strong></div>
+          <div>Transport</div>
+          <div><strong>Syncs to the host clock at bar boundaries</strong></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <h2>Common Questions</h2>
+        <ul class="list">
+          <li><strong>No sound:</strong> Locus outputs MIDI only. Route it to a synth track.</li>
+          <li><strong>The loop keeps changing:</strong> Lower the Variation. At 0 the loop is frozen and never changes.</li>
+          <li><strong>It sounds different each time I load it:</strong> Same settings always produce the same output. Check that the archetype, seed, and variation match.</li>
+          <li><strong>Changes feel delayed:</strong> Locus applies changes at bar boundaries for clean, glitch-free timing.</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>© Joe Topjian</div>
+      <div>
+        <a href="index.html">Apps</a>
+        <span style="padding:0 8px">·</span>
+        <a href="support.html">Support</a>
+        <span style="padding:0 8px">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/site.js"></script>
+</body>
+</html>
