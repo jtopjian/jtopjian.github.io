@@ -444,6 +444,7 @@ pre.doc-copy {
 .tutorial-card {
   display: grid;
   gap: 10px;
+  align-self: start;
 }
 
 .tutorial-card h2 {
